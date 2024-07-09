@@ -1,0 +1,478 @@
+.heroDiv {
+  display: flex;
+  overflow: hidden;
+  padding-left: 130px;
+  padding-top: 170px;
+}
+
+.heroSx {
+  line-height: 1;
+  width: 50%;
+  position: relative;
+}
+
+.myWork {
+  font-size: 20px;
+  color: rgb(117, 117, 117);
+}
+
+.myName {
+  font-family: "Mulish", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 105px;
+  margin-top: 30px;
+}
+
+.heroDown {
+  margin-top: 45px;
+  display: flex;
+}
+
+.line {
+  width: 1px;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.myDescription {
+  color: rgb(117, 117, 117);
+  font-size: 23px;
+  width: 300px;
+  line-height: 1.5;
+  margin-left: 35px;
+}
+
+.play {
+  position: absolute;
+  top: 26%;
+  left: -30%;
+  z-index: 10;
+  transition: transform 0.3s, opacity 0.4s;
+  scale: 0.35;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.play:hover {
+  transform: scale(1.2);
+}
+
+.stop {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 16;
+  scale: 0.2;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.4s;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.stop:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.heroDx {
+  position: relative;
+  margin-top: -120px;
+  width: 50%;
+}
+
+.circle {
+  scale: 1.28;
+  margin-left: -30px;
+  margin-top: 20px;
+  padding-bottom: 25px;
+  transform: translateX(65px) translateY(70px);
+  align-self: flex-start;
+  transition: opacity 0.8s;
+}
+
+.bolla {
+  position: absolute;
+  scale: 0.7;
+  top: 25%;
+  z-index: 20;
+}
+
+.loader {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  top: 48%;
+  left: 35%;
+  z-index: 999999;
+  background-color: transparent;
+}
+
+.loaderSpinner {
+  border: 10px solid rgb(255, 255, 255);
+  border-top: 8px solid #fc3c3c;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.circularIframe {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 535px;
+  height: 535px;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  z-index: 15;
+}
+
+.video {
+  border-radius: 50%;
+  width: 560px;
+  height: 560px;
+  scale: 1.8;
+  visibility: hidden;
+  transition: opacity 0.8s;
+}
+
+.divSocial {
+  position: absolute;
+  top: 15%;
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btSocial {
+  background-color: transparent;
+  border-color: transparent;
+  transition: scale 0.4s;
+}
+
+.btSocial:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.social {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.oblique {
+  position: absolute;
+  top: -10%;
+  left: -32%;
+  scale: 0.5;
+}
+
+@media screen and (max-width: 1100px) {
+  .heroDiv {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+  }
+
+  .myWork {
+    font-size: 17px;
+  }
+
+  .myName {
+    font-size: 65px;
+  }
+
+  .oblique {
+    left: -45%;
+    scale: 0.3;
+  }
+
+  .divSocial {
+    top: 25%;
+    right: 5%;
+  }
+
+  .social {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heroDown {
+    margin-top: 20px;
+  }
+
+  .myDescription {
+    font-size: 19px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+  .heroDx {
+    margin-top: -60px;
+    align-items: center;
+  }
+
+  .circle {
+    scale: 0.9;
+    width: 100%;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .play {
+    top: -10%;
+    left: 20%;
+    scale: 0.2;
+  }
+
+  .stop {
+    top: -10%;
+    left: 20%;
+    scale: 0.2;
+  }
+
+  .circularIframe {
+    top: 20%;
+    left: 10%;
+    width: 535px;
+    height: 535px;
+  }
+
+  .video {
+    width: 560px;
+    height: 560px;
+  }
+}
+
+
+
+.color1 {
+  background-color: rgb(124, 164, 228);
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0%;
+  opacity: 0.7;
+  border-radius: 100%;
+  filter: blur(65px);
+  z-index: -1;
+}
+
+.color2 {
+  background-color: #fc3c3c;
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  top: 20px;
+  right: 0%;
+  opacity: 0.41;
+  border-radius: 100%;
+  filter: blur(65px);
+  z-index: -1;
+}
+
+.color3 {
+  background-color: #33a1fd;
+  width: 40%;
+  height: 250px;
+  position: absolute;
+  top: 4%;
+  right: 0%;
+  opacity: 0.78;
+  border-radius: 70px;
+  filter: blur(95px);
+  z-index: -1;
+}
+
+.color4 {
+  background-color: #fc3c3c;
+  height: 400px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  opacity: 0.36;
+  border-radius: 70px;
+  filter: blur(95px);
+  z-index: -1;
+}
+
+@media screen and (max-width: 850px) {
+  .heroDiv {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .myName {
+    font-size: 50px;
+  }
+
+  .oblique {
+    left: -35%;
+    top: -30%;
+    scale: 0.3;
+  }
+
+  .divSocial {
+    top: 10%;
+    right: 5%;
+  }
+
+  .social {
+    width: 30px;
+    height: 30px;
+  }
+
+  .myDescription {
+    font-size: 17px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .play {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+
+  .stop {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+
+  .circularIframe {
+    top: 20%;
+    left: 10%;
+    width: 535px;
+    height: 535px;
+  }
+
+  .video {
+    width: 560px;
+    height: 560px;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .heroDiv {
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .heroSx {
+    width: 100%;
+  }
+
+  .myName {
+    font-size: 60px;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .oblique {
+    left: -35%;
+    top: -30%;
+    scale: 0.3;
+  }
+
+  .divSocial {
+     display: none;
+  }
+
+  .myDescription {
+    font-size: 17px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+  .heroDx {
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .circle {
+    margin-top: 50px;
+  }
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .play {
+    top: 10%;
+    left: 30%;
+    scale: 0.3;
+  }
+
+  .stop {
+    top: 10%;
+    left: 30%;
+    scale: 0.3;
+  }
+
+  .circularIframe {
+    top: 20%;
+    left: 10%;
+    width: 535px;
+    height: 535px;
+  }
+
+  .video {
+    width: 560px;
+    height: 560px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+    .play {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+
+  .stop {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+}

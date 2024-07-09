@@ -1,0 +1,193 @@
+.divNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 150;
+}
+
+.navbarTop {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border: 1px solid #001638;
+  border-radius: 35px;
+  padding: 15px 25px !important;
+  justify-content: space-evenly;
+  background: rgb(1, 0, 18);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 0, 18, 1) 0%,
+    #2176ff 100%
+  );
+  opacity: 0.9;
+  transition: height 0.5s ease;
+}
+
+.navTitle {
+  align-self: flex-start;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 200;
+  font-family: "Mulish", sans-serif;
+}
+
+.navPage {
+  color: white !important;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  margin-right: 30px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navPage:hover > div {
+  color: #2176ff;
+}
+
+.arrow {
+  margin-left: 8px;
+  height: 12px;
+}
+.divPages {
+  display: flex;
+  margin-left: 50px;
+}
+
+.myNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switchLogo {
+  display: none;
+}
+
+.divPages > .navPage {
+  align-self: flex-start;
+}
+
+.mark {
+  background-color: transparent;
+  width: 100%;
+  height: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+.navPage:hover .mark {
+  background-color: #2176ff;
+}
+
+.activeMark {
+  background-color: #2176ff;
+  width: 100%;
+  height: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+.dropdown {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.linkService1,
+.linkService2 {
+  color: white;
+  text-decoration: none;
+}
+
+.linkService1:hover .singleService1,
+.linkService2:hover .singleService2 {
+  background-color: #2176ff;
+  height: 2px;
+  width: auto;
+  margin-left: 15px;
+}
+
+.linkService1 .singleService1,
+.linkService2 .singleService2 {
+  transition: all 0.3s ease;
+}
+
+.arrowService {
+  rotate: -90deg;
+  width: 10px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+}
+
+.divDx {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.themeText {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.contatti {
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  padding: 8px 24px;
+  background-color: #fc3c3c;
+  font-size: 16px;
+  border: solid 2px #fc3c3c;
+  color: white;
+  margin-left: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+ 
+  text-decoration: none;
+  transition: scale 0.3s ease;
+}
+
+.contatti:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 990px) {
+.divNav {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.myNav{
+  flex-direction: column;
+}
+
+.divDx {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.switch {
+  margin-left: -10px;
+}
+
+  .navPage {
+    margin-right: 30px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .contatti {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .divPages {
+    margin-left: 0px;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .themeText {
+    display: none;
+  }
+}

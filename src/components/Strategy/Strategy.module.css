@@ -1,0 +1,281 @@
+.container {
+  margin-top: 100px;
+  padding-left: 16%;
+  padding-right: 16%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 65px;
+  font-family: "Mulish", serif;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 3rem;
+}
+
+.menu {
+  display: flex;
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 24rem;
+  justify-content: center;
+}
+
+.menuItem {
+  margin-right: 55px;
+  
+}
+
+.titleMenu {
+  display: flex;
+  align-items: center;
+}
+
+.underline {
+  height: 4px;
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.search {
+  text-decoration: none;
+}
+
+.stackWrapper {
+  display: flex;
+  flex-direction: column;
+  gap:5rem;
+}
+
+.stackCard {
+  position: sticky;
+  display: flex;
+  top: 16rem;
+  padding-left: 30px;
+  
+}
+
+.number {
+  border-radius: 50%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.description {
+  margin-left: 20px;
+  font-size: 33px;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 8px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--color-blu);
+}
+
+.strategyDescription {
+  width: 100%;
+  font-family: "Maitree", sans-serif;
+  font-size: 20px;
+  margin-left: 35px;
+  font-weight: 500;
+  color: rgb(129, 129, 129)
+}
+
+.numb {
+  font-size: 34px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+ color: rgb(129, 129, 129)
+}
+
+.imgDx {
+  scale: 0.9;
+  margin-top: -30px;
+}
+.imgDxSocial {
+  margin-top: -30px;
+  margin-left: 20px;
+}
+
+.imgDx2 {
+scale: 0.8;
+margin-top: -45px;
+rotate: 23deg;
+}
+.imgDxSocial2 {
+scale: 0.9;
+margin-top: -55px;
+margin-left: 75px;
+rotate: -12deg;
+}
+
+.imgDx3 {
+  scale: 0.9;
+  margin-left: -20px;
+  rotate: 2deg;
+}
+.imgDxSocial3 {
+  margin-left: 80px;
+}
+
+.imgDx4 {
+  scale: 0.9;
+  margin-left: -20px;
+  rotate: 14deg;
+}
+.imgDxSocial4 {
+  margin-left: 80px;
+  rotate: 10deg;
+}
+
+.first {
+  background: rgb(21,100,228);
+  background: linear-gradient(180deg, rgba(21,100,228,1) 0%, rgba(110,109,109,1) 100%);
+  margin-bottom: 14rem;
+  top: 26rem;
+  height: 23rem;
+  width: 45%;
+  border-radius: 3rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.text {
+  width: 65%;
+}
+
+.fourth {
+  margin-bottom: -17rem;
+  top: 15rem;
+}
+
+.freccia {
+  position: absolute;
+  top: 7%;
+  right: -23%;
+  scale: 0.4;
+}
+
+.puntini {
+  position: absolute;
+  top: 45%;
+  left: -30%;
+  rotate: 90deg;
+  scale: 0.4;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .title {
+    font-size: 43px;
+  }
+
+  .menuItem {
+    margin-right: 15px;
+  }
+
+  .number {
+    font-size: 17px;
+  }
+
+  .description {
+    font-size: 23px;
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  .container{
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .stackCard {
+    position: static;
+    flex-direction: column;
+    top: 0rem;
+  }
+
+  .first {
+    height: 8rem;
+    width: 100%;
+    top: 0rem;
+    margin-bottom: 25px
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .numb {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .strategyDescription {
+    font-size: 15px;
+    line-height: 22px;
+    margin-left: 0px;
+  }
+
+  .imgDx, .imgDx2, .imgDx3, .imgDx4, .imgDxSocial, .imgDxSocial2, .imgDxSocial3, .imgDxSocial4 {
+    scale: 0.4;
+    margin-top: -160px;
+  }
+
+  .imgDxSocial2 {
+    margin-top: -180px;
+  }
+
+  .imgDx3 {
+    margin-top: -120px;
+  }
+
+  .imgDx4 {
+    margin-top: -100px;
+  }
+
+  .title {
+    margin-bottom: 55px;
+  }
+
+  .fourth{
+    top: 0rem;
+    margin-bottom: 25px;
+  
+  }
+
+}
+
+.color1 {
+  background-color: rgb(124, 164, 228);
+  width: 200px;
+  height: 500%;
+  position: absolute;
+  top: 300px;
+  right: -14%;
+  opacity: 0.3;
+  border-radius: 100%;
+  filter: blur(65px);
+}
+
+.color2 {
+  background-color: #fc3c3c;
+  width: 280px;
+  height: 290%;
+  position: absolute;
+   top: 50px;
+  left: -14%;
+  opacity: 0.21;
+  border-radius: 100%;
+  filter: blur(95px);
+  z-index: -1;
+}
