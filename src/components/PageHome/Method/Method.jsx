@@ -5,9 +5,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import X from "../../Images/X.png";
-import XEmpty from "../../Images/XEmpty.png";
-import Puntini from "../../Images/Puntini.png";
+import X from "../../../Images/X.png";
+import XEmpty from "../../../Images/XEmpty.png";
+import Puntini from "../../../Images/Puntini.png";
 
 export default function Method() {
   // const theme = useSelector((state) => state.theme);

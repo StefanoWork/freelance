@@ -3,8 +3,8 @@
 import style from "./Strategy.module.css";
 import Image from "next/image";
 
-import Freccia from "../../Images/FrecciaLunga.png";
-import Puntini from "../../Images/Puntini.png";
+import Freccia from "../../../Images/FrecciaLunga.png";
+import Puntini from "../../../Images/Puntini.png";
 
 import React, { useEffect, useRef } from "react";
 import parse from "html-react-parser";

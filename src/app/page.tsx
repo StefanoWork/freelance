@@ -3,18 +3,18 @@ import Link from "next/link";
 import Head from "next/head";
 
 import Navbar from "../components/Navbar/Navbar";
-import Hero from "../components/Hero/Hero";
-import About from "../components/About/About";
-import Services from "../components/Services/Services";
-import Method from "../components/Method/Method";
-import Portfolio from "../components/Portfolio/Portfolio";
-import Opinion from "../components/Opinion/Opinion";
-import Blog from "../components/Blog/Blog";
+import Hero from "../components/PageHome/Hero/Hero";
+import About from "../components/PageHome/About/About";
+import Services from "../components/PageHome/Services/Services";
+import Method from "../components/PageHome/Method/Method";
+import Portfolio from "../components/PageHome/Portfolio/Portfolio";
+import Opinion from "../components/PageHome/Opinion/Opinion";
+import Blog from "../components/PageHome/Blog/Blog";
 import Contact from "../components/Contact/Contacts";
 import Footer from "../components/Footer/Footer";
-import CTA from "../components/CTA/CTA";
-import FollowMe from "../components/FollowMe/FollowMe";
-import Call from "../components/Call-Float/Call";
+import CTA from "../components/PageHome/CTA/CTA";
+import FollowMe from "../components//PageHome/FollowMe/FollowMe";
+import Call from "../components/PageHome/Call-Float/Call";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

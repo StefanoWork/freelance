@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 import Navbar from "../../../components/Navbar/Navbar";
-import HeroSocial from "../../../components/HeroSocial/HeroSocial";
-import ServiceFor from "../../../components/ServiceFor/ServiceFor";
-import Strategy from "../../../components/Strategy/Strategy";
+import HeroSocial from "../../../components/PageServices/HeroSocial/HeroSocial";
+import ServiceFor from "../../../components/PageServices/ServiceFor/ServiceFor";
+import Strategy from "../../../components/PageServices/Strategy/Strategy";
 import Contact from "../../../components/Contact/Contacts";
 import Footer from "../../../components/Footer/Footer";
 

@@ -3,7 +3,7 @@
 import style from "./Call.module.css";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import Bolla from "../../Images/Bolla.png";
+import Bolla from "../../../Images/Bolla.png";
 
 export default function Call() {
   const div = useRef(null);

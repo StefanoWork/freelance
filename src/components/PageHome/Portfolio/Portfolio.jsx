@@ -1,10 +1,10 @@
 import style from "./Portfolio.module.css";
 import Image from "next/image";
 
-import Bolla from "../../Images/Bolla.png";
+import Bolla from "../../../Images/Bolla.png";
 
-import Progetto1 from "../../Images/Progetto1.png";
-import Progetto2 from "../../Images/Progetto2.png";
+import Progetto1 from "../../../Images/Progetto1.png";
+import Progetto2 from "../../../Images/Progetto2.png";
 
 export default function Portfolio() {
   return (

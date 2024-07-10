@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 import style from "./About.module.css";
-import Programming from "../../Images/About.png";
-import Freccia from "../../Images/FrecciaArancione.png";
-import Puntini from "../../Images/Puntini.png";
+import Programming from "../../../Images/About.png";
+import Freccia from "../../../Images/FrecciaArancione.png";
+import Puntini from "../../../Images/Puntini.png";
 
 export default function About() {
   return (

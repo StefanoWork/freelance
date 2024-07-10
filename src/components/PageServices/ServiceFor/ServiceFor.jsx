@@ -4,9 +4,9 @@ import Image from "next/image";
 import React from "react";
 import parse from "html-react-parser";
 
-import XRed from "../../Images/XEmptyRed.png";
-import Bolla from "../../Images/Bolla.png";
-import PuntiniBlu from "../../Images/PuntiniBlu.png";
+import XRed from "../../../Images/XEmptyRed.png";
+import Bolla from "../../../Images/Bolla.png";
+import PuntiniBlu from "../../../Images/PuntiniBlu.png";
 
 export default function ServiceFor({
   secondaDescrizione,

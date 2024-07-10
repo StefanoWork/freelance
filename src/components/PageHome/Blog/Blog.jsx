@@ -3,7 +3,7 @@
 import style from "./Blog.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import freccia from "../../Images/Freccina1.png";
+import freccia from "../../../Images/Freccina1.png";
 
 import { useState, useEffect } from "react";
 import { request, gql } from "graphql-request";

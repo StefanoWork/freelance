@@ -3,16 +3,16 @@
 import Image from "next/image";
 
 import style from "./Hero.module.css";
-import Circle from "../../Images/Circle.png";
-import PlayButton from "../../Images/Play.png";
-import StopButton from "../../Images/Close.png";
-import Bolla from "../../Images/Bolla.png";
-import Oblique from "../../Images/Oblique.png";
-import Email from "../../Images/Social/Email.png";
-import Facebook from "../../Images/Social/FacebookC.png";
-import Instagram from "../../Images/Social/InstagramC.png";
-import TikTok from "../../Images/Social/TikTokC.png";
-import LinkedIn from "../../Images/Social/LinkedInC.png";
+import Circle from "../../../Images/Circle.png";
+import PlayButton from "../../../Images/Play.png";
+import StopButton from "../../../Images/Close.png";
+import Bolla from "../../../Images/Bolla.png";
+import Oblique from "../../../Images/Oblique.png";
+import Email from "../../../Images/Social/Email.png";
+import Facebook from "../../../Images/Social/FacebookC.png";
+import Instagram from "../../../Images/Social/InstagramC.png";
+import TikTok from "../../../Images/Social/TikTokC.png";
+import LinkedIn from "../../../Images/Social/LinkedInC.png";
 
 import { useRef, useState } from "react";
 

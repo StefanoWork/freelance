@@ -2,10 +2,9 @@ import style from "./Opinion.module.css";
 import Image from "next/image";
 
 import SingleReview from "../SingleReview/SingleReview";
-import Bolla from "../../Images/Bolla.png";
-import Puntini from "../../Images/Puntini.png";
-
-import MatteoMangili from "../../Images/Recensioni/MatteoMangili.png";
+import Bolla from "../../../Images/Bolla.png";
+import Puntini from "../../../Images/Puntini.png";
+import MatteoMangili from "../../../Images/Recensioni/MatteoMangili.png";
 
 export default function Opinion() {
   return (

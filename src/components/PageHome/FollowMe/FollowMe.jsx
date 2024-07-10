@@ -1,10 +1,10 @@
 import style from "./FollowMe.module.css";
 import Image from "next/image";
 
-import InstagramC from "../../Images/Social/InstagramC.png";
-import TikTokC from "../../Images//Social/TikTokC.png";
-import LinkedInC from "../../Images/Social/LinkedInC.png";
-import FacebookC from "../../Images/Social/FacebookC.png";
+import InstagramC from "../../../Images/Social/InstagramC.png";
+import TikTokC from "../../../Images//Social/TikTokC.png";
+import LinkedInC from "../../../Images/Social/LinkedInC.png";
+import FacebookC from "../../../Images/Social/FacebookC.png";
 
 export default function FollowMe() {
   return (

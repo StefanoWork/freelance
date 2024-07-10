@@ -2,9 +2,9 @@ import Head from "next/head";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import HeroWeb from "../../../components/HeroWeb/HeroWeb";
-import ServiceFor from "../../../components/ServiceFor/ServiceFor";
-import Strategy from "../../../components/Strategy/Strategy";
+import HeroWeb from "../../../components/PageServices/HeroWeb/HeroWeb";
+import ServiceFor from "../../../components/PageServices/ServiceFor/ServiceFor";
+import Strategy from "../../../components/PageServices/Strategy/Strategy";
 import Contact from "../../../components/Contact/Contacts";
 
 import check from "../../../Images/check.png";

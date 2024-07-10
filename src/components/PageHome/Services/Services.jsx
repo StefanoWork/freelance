@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import style from "./Services.module.css";
-import Freccia from "../../Images/FrecciaLunga.png";
-import Puntini from "../../Images/PuntiniBlu.png";
-import Phone from "../../Images/Phone.png";
-import Phone1 from "../../Images/Phone1.png";
-import PC1 from "../../Images/PC1.png";
-import PC2 from "../../Images/PC2.png";
+import Freccia from "../../../Images/FrecciaLunga.png";
+import Puntini from "../../../Images/PuntiniBlu.png";
+import Phone from "../../../Images/Phone.png";
+import Phone1 from "../../../Images/Phone1.png";
+import PC1 from "../../../Images/PC1.png";
+import PC2 from "../../../Images/PC2.png";
 
 import { useRef, useEffect, useState } from "react";
 
