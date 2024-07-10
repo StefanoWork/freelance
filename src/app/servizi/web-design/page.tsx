@@ -1,19 +1,49 @@
+import Head from "next/head";
+
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import HeroWeb from "../../../components/HeroWeb/HeroWeb";
 import ServiceFor from "../../../components/ServiceFor/ServiceFor";
 import Strategy from "../../../components/Strategy/Strategy";
+import Contact from "../../../components/Contact/Contacts";
 
 import check from "../../../Images/check.png";
-import Laptop from  "../../../Images/Laptop.png";
+import Laptop from "../../../Images/Laptop.png";
 import Laptop1 from "../../../Images/Laptop1.png";
 import Laptop2 from "../../../Images/Laptop2.png";
 import Laptop3 from "../../../Images/Laptop3.png";
 import Laptop4 from "../../../Images/Laptop4.png";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Stefano Montemarli - Web Designer Professionista",
+  description:
+    "Web Designer professionista: Creo siti web ottimizzati e personalizzati per potenziare la tua presenza online, migliorare la visibilità e aumentare il traffico. Scopri come posso aiutarti a raggiungere i tuoi obiettivi digitali",
+};
 
 export default function WebDesignPage() {
   return (
     <>
+      <head>
+        <link
+          rel="canonical"
+          href="https://www.stefanomontemarli.it/servizi/web-design"
+        />
+        <meta property="og:title" content="Stefano Montemarli" />
+        <meta
+          property="og:description"
+          content="Migliora la tua presenza online con un sito web professionale e ottimizzato"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://1drv.ms/i/s!AmWaVBl9p_dCgWiemacZx7YdEJm6?e=OpigS2"
+        />
+        <meta
+          property="og:url"
+          content="https://www.stefanomontemarli.it/servizi/web-design"
+        />
+      </head>
       <Navbar />
       <HeroWeb />
       <ServiceFor
@@ -63,6 +93,7 @@ export default function WebDesignPage() {
                        la privacy online. <br/><br/>Infine non voglio lasciarti solo! Ti fornirò <span style="color: #2176ff">supporto continuativo</span> nel tempo e ti assisterò per interventi di manutenzione e aggiornamenti e condividerò le analisi periodiche del rendimento del tuo sito sui motori di ricerca.
                       `}
       />
+      <Contact />
       <Footer />
     </>
   );
