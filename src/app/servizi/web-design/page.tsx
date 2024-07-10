@@ -5,7 +5,7 @@ import ServiceFor from "../../../components/ServiceFor/ServiceFor";
 import Strategy from "../../../components/Strategy/Strategy";
 
 import check from "../../../Images/check.png";
-import Laptop from "../../../Images/laptop.png";
+import Laptop from  "../../../Images/Laptop.png";
 import Laptop1 from "../../../Images/Laptop1.png";
 import Laptop2 from "../../../Images/Laptop2.png";
 import Laptop3 from "../../../Images/Laptop3.png";
