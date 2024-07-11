@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import Footer from "../../components/Footer/Footer";
-import HeroFreeDesign from "../../components/FreeDesign/HeroFreeDesign/HeroFree";
+import HeroFreeDesign from "../../components/FreeDesign/Hero/Hero";
 import Method from "../../components/FreeDesign/Method/Method";
 import Contact from "../../components/FreeDesign/Contact/Contacts";
 import Video from "../../components/FreeDesign/Video/video";

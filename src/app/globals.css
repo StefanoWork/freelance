@@ -1,7 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-h1, h2, h3 {
-  font-family: 'Mulish', sans-serif;
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+:root {
+  --background-color: rgb(255, 255, 255);
+  --text-color: white;
+  --text-color-subtitle: rgb(167, 163, 163);
+
+  --blu: #2176ff;
+  --blu-scuro: #083358;
+  --rosso: #fc3c3c;
+}
+
+/* Questo cambierà l'aspetto della barra di scorrimento */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Questo cambierà l'aspetto del tracciato della barra di scorrimento */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Questo cambierà l'aspetto del pollice della barra di scorrimento */
+::-webkit-scrollbar-thumb {
+  background: #083358;
+}
+
+/* Questo cambierà l'aspetto del pollice della barra di scorrimento quando è in hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2176ff;
+}
+
+.mulish {
+  font-family: var(--font-mulish);
+}
+
+.barlow {
+  font-family: var(--font-barlow-condensed);
+}
+
+.maitree {
+  font-family: var(--font-maitree);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

@@ -6,13 +6,13 @@ import Bolla from "../../Images/Bolla.png";
 export default function Call() {
   return (
     <div className={style.container}>
-      <h1 className={`${style.confirmed} mulish`}>Call prenotata</h1>
+      <h1 className={`${style.confirmed} mulish`}>Prenotazione confermata</h1>
       <h2 className={`${style.subtitle} mulish`}>
-        Riceverai un&apos;email come conferma all&apos;indirizzo indicato
+        Riceverai un&apos;email all&apos;indirizzo indicato con tutti i dati
       </h2>
 
       <h3 className={`${style.regalo} barlow`}>
-        Guarda questo video per prepararti alla tua call
+        Guarda questo breve video per prepararti alla tua call
       </h3>
       <iframe
         src="https://fast.wistia.com/embed/medias/lw5lhial8n"
