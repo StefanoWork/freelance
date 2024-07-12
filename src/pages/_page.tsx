@@ -1,4 +1,3 @@
-import "../../src/app/global.css";
 import Template from "../app/template";
 
 function MyApp({ Component, pageProps }) {
