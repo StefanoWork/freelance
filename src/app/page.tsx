@@ -1,7 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
-
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/PageHome/Hero/Hero";
 import About from "../components/PageHome/About/About";

@@ -1,12 +1,12 @@
 "use client";
 
-import style from "./Articles.module.css";
+import style from "./MainArticles.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { request, gql } from "graphql-request";
 
-import freccia from "../../Images/Freccina1.png";
+import freccia from "../../../Images/Freccina1.png";
 
 export default function Articles() {
   const [articoli, setArticoli] = useState([]);
