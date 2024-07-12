@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Video1 from "../../components/PageRegaloDesign/Video1-design/Video1";
-import Video2 from "../../components/PageRegaloDesign/Video2-design/Video2";
+import Video1 from "../../components/PageRegaloDesign/Video1/Video1";
+import Video2 from "../../components/PageRegaloDesign/Video2/Video2";
 import CTA from "../../components/PageHome/CTA/CTA";
 import Footer from "../../components/Footer/Footer";
 import { Metadata } from "next";
