@@ -1,4 +1,4 @@
-import style from "./HeroFree.module.css";
+import style from "./Hero.module.css";
 import Image from "next/image";
 
 import Bolla from "../../../Images/Bolla.png";

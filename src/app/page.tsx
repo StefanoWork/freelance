@@ -50,7 +50,7 @@ export default function Home() {
       <About />
       <Services />
       <Method />
-      <CTA />
+      <CTA href="#Contacts"/>
       <Portfolio />
       <Opinion />
       {/* <Blog /> */}
