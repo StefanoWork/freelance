@@ -3,7 +3,7 @@ import Template from "../app/template";
 import "../app/globals.css";
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Template>
       <Component {...pageProps} />
