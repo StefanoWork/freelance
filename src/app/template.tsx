@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { animatePageIn } from "./utils/animation";
 import Image from "next/image";
 import Bolla from "../Images/Bollina.webp";
+import React from "react";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   useEffect(() => {
