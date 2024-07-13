@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${mulish_init.variable} ${barlow_condensed_init}`}>
+      <body className={`${mulish_init.variable} ${barlow_condensed_init} ${maitree_init}`}>
         <IubendaProvider bannerConfig={iubendaBannerConfig}>
           {children}
         </IubendaProvider>
