@@ -72,17 +72,17 @@ export default function Hero() {
   return (
     <div className={style.heroDiv} id="Home">
       <div className={style.heroSx}>
-        <Image src={Oblique} alt="Oblique" className={style.oblique} />
+        <Image src={Oblique} alt="" className={style.oblique} />
         <div className={style.myWork}>
           SOCIAL MEDIA MANAGER,
           <br />
           WEB DESIGNER & FRONT-END DEVELOPER
         </div>
         <div className={style.divMe}>
-          <div className={style.myName}>Stefano Montemarli</div>
+          <div className={`${style.myName} mulish`}>Stefano Montemarli</div>
           <div className={style.heroDown}>
             <div className={style.line}></div>
-            <p className={style.myDescription}>
+            <p className={`${style.myDescription} barlow`}>
               Gestisco profili social e creo siti web. Sarò il tuo supporto e lo
               faccio con passione e dedizione
             </p>

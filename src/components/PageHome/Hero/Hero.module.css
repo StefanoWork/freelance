@@ -17,10 +17,10 @@
 }
 
 .myName {
-  font-family: "Mulish", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 105px;
   margin-top: 30px;
+  font-weight: 800;
 }
 
 .heroDown {
@@ -31,11 +31,11 @@
 .line {
   width: 1px;
   height: auto;
-  background-color: rgb(0, 0, 0);
+  background-color:  rgb(65, 65, 65);
 }
 
 .myDescription {
-  color: rgb(117, 117, 117);
+  color: rgb(65, 65, 65);
   font-size: 23px;
   width: 300px;
   line-height: 1.5;
@@ -404,7 +404,6 @@
   .myName {
     font-size: 60px;
     width: 100%;
-    font-weight: 700;
   }
 
   .oblique {
@@ -418,7 +417,7 @@
   }
 
   .myDescription {
-    font-size: 17px;
+    font-size: 19px;
     width: 82%;
     margin-left: 10px;
   }
@@ -465,14 +464,6 @@
 
 @media screen and (max-width: 440px) {
     .play {
-    top: -20%;
-    left: 0%;
-    scale: 0.2;
-  }
-
-  .stop {
-    top: -20%;
-    left: 0%;
-    scale: 0.2;
+    display: none;
   }
 }

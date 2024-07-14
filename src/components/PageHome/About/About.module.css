@@ -24,7 +24,7 @@
   margin-left: -100px;
   line-height: 55px;
   margin-bottom: 95px;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 95px;
   
 }
@@ -189,7 +189,7 @@
   }
 
   .title {
-    font-size: 43px;
+    font-size: 68px;
     line-height: 45px;
     margin-left: -15px;
   }
@@ -200,7 +200,7 @@
   }
 
   .Description {
-    font-size: 17px;
+    font-size: 21px;
     margin-left: 0px;
     display: block;
   }
@@ -230,6 +230,10 @@
     padding-left: 5%;
     padding-right: 5%;
     overflow: hidden;
+  }
+
+  .title {
+    font-size: 43px;
   }
 
 }
