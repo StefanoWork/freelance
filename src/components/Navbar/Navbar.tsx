@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import style from "./Hero.module.css";
+import style from "./Navbar.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
@@ -88,7 +88,7 @@ export default function NavbarComponent() {
     <div className={style.divNav}>
       <Navbar expand="lg" className="mynav">
         <Container id="navbarTop" className={style.navbarTop}>
-          <Navbar.Brand className={style.navTitle}>
+          <Navbar.Brand className={`${style.navTitle} mulish`}>
             <Link className={style.logo} href="/">
               Stefano Montemarli
             </Link>
@@ -96,7 +96,7 @@ export default function NavbarComponent() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <div className={style.divPages}>
+              <div className={`${style.divPages} mulish`}>
                 <Link href="/" onClick={handleHome} className={style.navPage}>
                   Home
                   <div
@@ -150,7 +150,7 @@ export default function NavbarComponent() {
               >
                 Scuro
               </p> */}
-              <a className={style.contatti} href="#Contacts">
+              <a className={`${style.contatti} barlow`} href="#Contacts">
                 Contattami
               </a>
             </div>

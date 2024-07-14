@@ -24,7 +24,7 @@
   margin-left: -100px;
   line-height: 55px;
   margin-bottom: 95px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 95px;
   
 }
@@ -152,7 +152,6 @@
   background-color: var(--color-blu-scuro);
   font-size: 28px;
   border: none;
-  font-family: "Barlow Condensed", sans-serif;
   color: white;
   border-radius: 22px;
   padding: 10px 18px;
@@ -201,7 +200,7 @@
   }
 
   .Description {
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 0px;
     display: block;
   }

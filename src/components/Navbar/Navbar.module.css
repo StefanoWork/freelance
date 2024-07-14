@@ -24,19 +24,19 @@
 }
 
 .navTitle {
-  align-self: flex-start;
+  align-self: center
 }
 
 .logo {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-weight: 200;
-  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .navPage {
   color: white !important;
-  font-family: "Mulish", sans-serif;
+  font-weight: 200;
   font-size: 15px;
   margin-right: 30px;
   text-decoration: none;
@@ -137,12 +137,10 @@
   justify-content: center;
   padding: 8px 24px;
   background-color: #fc3c3c;
-  font-size: 16px;
+  font-size: 18px;
   border: solid 2px #fc3c3c;
   color: white;
   margin-left: 30px;
-  font-family: "Barlow Condensed", sans-serif;
- 
   text-decoration: none;
   transition: scale 0.3s ease;
 }
