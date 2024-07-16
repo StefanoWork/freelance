@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <>
       <div className={style.container} id="Portfolio">
-        <h2 className={style.title}>Portfolio</h2>
+        <h2 className={`${style.title} mulish`}>Portfolio</h2>
 
         <Image className={style.bolla1} src={Bolla} alt="" />
 

@@ -50,20 +50,20 @@ export default function SingleReview({
       <div className={style.Dx}>
         <div className={style.author}>
           <Image src={Logo} alt="Logo" className={style.logo} />
-          <p className={style.name}>{Nome}</p>
+          <p className={`${style.name} barlow`}>{Nome}</p>
         </div>
-        <p className={style.text}>{Testo}</p>
+        <p className={`${style.text} maitree`}>{Testo}</p>
         <div className={style.stelline}>
           <div>
-            <p className={style.skill}>Professionalità</p>
+            <p className={`${style.skill} barlow`}>Professionalità</p>
             <div className={style.stars}>{starsProfessionalita}</div>
           </div>
           <div>
-            <p className={style.skill}>Efficienza</p>
+            <p className={`${style.skill} barlow`}>Efficienza</p>
             <div className={style.stars}>{starsEfficienza}</div>
           </div>
           <div>
-            <p className={style.skill}>Creatività</p>
+            <p className={`${style.skill} barlow`}>Creatività</p>
             <div className={style.stars}>{starsCreativita}</div>
           </div>
         </div>

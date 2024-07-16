@@ -7,13 +7,19 @@ import Cerchio1 from "../../Images/Cerchio1.png";
 import Cerchio2 from "../../Images/Cerchio2.png";
 import PuntiniBlu from "../../Images/PuntiniBlu.png";
 
-import { useRef, useEffect } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+
 export default function Contacts() {
   const form = useRef();
+    const [buttonText, setButtonText] = useState('Invia');
+
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const sended = document.getElementById("button");
+    sended.value = "Invio in corso...";
+
 
     emailjs
       .sendForm(
@@ -22,35 +28,20 @@ export default function Contacts() {
         form.current,
         "jymmQ542M59Jy69Sb"
       )
-      .then(
-        (result) => {
-          const sended = document.getElementById("button");
+      .then((result) => {
           sended.value = "Inviato!";
           sended.disabled = true;
           sended.style.backgroundColor = "#fc3c3c";
           form.current.reset();
-        },
-        (error) => {
-          const sended = document.getElementById("button");
+        },(error) => {
           sended.value = "Ops... Riprova!";
         }
       );
   };
 
-  // useEffect(() => {
-  //   (async function () {
-  //     const cal = await getCalApi();
-  //     cal("ui", {
-  //       styles: { branding: { brandColor: "#2176ff" } },
-  //       hideEventTypeDetails: false,
-  //       layout: "month_view",
-  //     });
-  //   })();
-  // }, []);
-
   return (
     <div className={style.container} id="Contacts">
-      <h2 className={style.title}>Contattami</h2>
+      <h2 className={`${style.title} mulish`}>Contattami</h2>
 
       <form className={style.form} onSubmit={sendEmail} ref={form}>
         <label className={style.label} htmlFor="name">
@@ -94,11 +85,7 @@ export default function Contacts() {
         </div>
       </form>
 
-      {/* <Cal
-        calLink="stefanom/call-conoscitiva"
-        style={{ width: "100%", height: "100%", overflow: "scroll" }}
-        config={{ layout: "month_view" }}
-      /> */}
+      
       <Image src={PuntiniBlu} alt="" className={style.puntiniBlu} />
       <Image src={Cerchio1} alt="" className={style.cerchio1} />
       <Image src={Cerchio2} alt="" className={style.cerchio2} />

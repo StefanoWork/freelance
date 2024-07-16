@@ -2,7 +2,7 @@ import style from "./Hero.module.css";
 import Image from "next/image";
 
 import Bolla from "../../../Images/Bolla.png";
-import FreeLesson from "../../../Images/FreeLesson.png";
+import FreeLesson from "../../../Images/FreeLesson.webp";
 import Indice from "../../../Images/Indice.png";
 
 export default function HeroFree() {

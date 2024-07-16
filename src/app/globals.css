@@ -16,6 +16,10 @@
   --blu: #2176ff;
   --blu-scuro: #083358;
   --rosso: #fc3c3c;
+
+  --title-desktop: 95px;
+  --title-tablet: 55px;
+  --title-mobile: 48px; 
 }
 
 /* Questo cambierà l'aspetto della barra di scorrimento */

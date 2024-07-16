@@ -14,7 +14,7 @@ export default function Method() {
   return (
     <>
       <div className={style.container} id="Method">
-        <h2 className={style.title}>Il mio metodo</h2>
+        <h2 className={`${style.title} mulish`}>Il mio metodo</h2>
 
         <Container className={style.grid}>
           <Row className="flex-column flex-sm-row">

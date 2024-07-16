@@ -2,7 +2,9 @@
 
 import style from "./Call.module.css";
 import Image from "next/image";
+import Link from 'next/link';
 import { useEffect, useRef } from "react";
+
 import Bolla from "../../../Images/Bolla.png";
 
 export default function Call() {
@@ -40,12 +42,11 @@ export default function Call() {
         <div className={`${style.title} barlow`}>
           Prenota una consulenza gratuita
         </div>
-        <a
+        <Link
           className={`${style.contatti} barlow`}
-          href="https://cal.com/stefanowork/call-discovery"
-        >
+          href="/prenotazione-call">
           Inizia
-        </a>
+        </Link>
         <Image src={Bolla} alt="" className={style.bolla} />
       </div>
     </div>

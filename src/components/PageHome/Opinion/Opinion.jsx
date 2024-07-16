@@ -4,12 +4,12 @@ import Image from "next/image";
 import SingleReview from "../SingleReview/SingleReview";
 import Bolla from "../../../Images/Bolla.png";
 import Puntini from "../../../Images/Puntini.png";
-import MatteoMangili from "../../../Images/Recensioni/MatteoMangili.png";
+import Recensione1 from "../../../Images/Recensioni/MatteoMangili.webp";
 
 export default function Opinion() {
   return (
     <div className={style.container} id="Review">
-      <h2 className={style.title}>Recensioni</h2>
+      <h2 className={`${style.title} mulish`}>Recensioni</h2>
 
       <SingleReview
         Testo="Lavorare con Stefano è stato molto utile perché mi ha permesso di risparmiare molto tempo, utile per la mia attività, oltre che a consentirmi 
@@ -19,7 +19,7 @@ export default function Opinion() {
         Creatività="10"
         Video="https://fast.wistia.com/embed/medias/bo105dmf4o"
         Nome="Matteo Mangili"
-        Logo={MatteoMangili}
+        Logo={Recensione1}
       />
 
       <Image className={style.bolla} src={Bolla} alt="" />

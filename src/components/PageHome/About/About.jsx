@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import style from "./About.module.css";
-import Programming from "../../../Images/About.png";
+import Programming from "../../../Images/About.webp";
 import Freccia from "../../../Images/FrecciaArancione.png";
 import Puntini from "../../../Images/Puntini.png";
 
@@ -47,7 +47,7 @@ export default function About() {
         </div>
       </div>
 
-      <p className={style.Description}>
+      <p className={`${style.Description} barlow`}>
         Ciao, sono Stefano. La mia passione è comunicare e creare con il
         computer.
         <br />

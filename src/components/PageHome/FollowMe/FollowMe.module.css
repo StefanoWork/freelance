@@ -11,7 +11,7 @@
   margin-bottom: 65px;
   font-weight: 600;
   text-align: left;
-  font-size: 95px;
+  font-size: var(--title-desktop);
   margin-right: 140px;
   line-height: 100px;
 }

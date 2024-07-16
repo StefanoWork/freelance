@@ -9,9 +9,9 @@
 
 .title {
   margin-bottom: 65px;
-  font-size: 95px;
-  font-family: "Mulish", serif;
+  font-size: var(--title-desktop);
   text-align: center;
+  font-weight: 600;
 }
 
 .form {

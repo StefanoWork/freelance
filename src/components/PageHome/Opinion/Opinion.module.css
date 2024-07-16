@@ -9,8 +9,8 @@
 
 .title {
   margin-bottom: 65px;
-  font-size: 95px;
-  font-family: "Mulish", serif;
+  font-size: var(--title-desktop);
+  font-weight: 600;
   text-align: end;
 }
 
@@ -72,7 +72,8 @@
 
   .puntini {
     scale: 0.3;
-    left: 0%;
+    left: 40%;
+    opacity: 0.4;
   }
 
   .bolla {

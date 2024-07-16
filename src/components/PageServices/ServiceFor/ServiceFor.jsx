@@ -20,15 +20,15 @@ export default function ServiceFor({
 }) {
   return (
     <div className={style.container} id="ServiceFor">
-      <h2 className={style.title}>Perché è utile</h2>
+      <h2 className={`${style.title} mulish`}>Perché è utile</h2>
 
       <div className={style.content}>
-        <div className={style.grid}>
+        <div className={style.Sx}>
           <Image src={image} alt="Laptop" className={style.Laptop} />
         </div>
 
         <div className={style.Dx}>
-          <p className={style.MainDescription}>{parse(secondaDescrizione)}</p>
+          <p className={`${style.MainDescription} maitree`}>{parse(secondaDescrizione)}</p>
           <div className={style.point}>
             <Image className={style.icona} src={icona1} alt=""></Image>
             <p className={style.secondDescription}>{titolo1}</p>

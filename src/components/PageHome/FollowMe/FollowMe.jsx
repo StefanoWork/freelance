@@ -1,10 +1,10 @@
 import style from "./FollowMe.module.css";
 import Image from "next/image";
 
-import InstagramC from "../../../Images/Social/InstagramC.png";
-import TikTokC from "../../../Images//Social/TikTokC.png";
-import LinkedInC from "../../../Images/Social/LinkedInC.png";
-import FacebookC from "../../../Images/Social/FacebookC.png";
+import Instagram from "../../../Images/Social/Instagram.webp";
+import TikTok from "../../../Images//Social/TikTok.webp";
+import LinkedIn from "../../../Images/Social/LinkedIn.webp";
+import Facebook from "../../../Images/Social/Facebook.webp";
 
 export default function FollowMe() {
   return (
@@ -34,20 +34,20 @@ export default function FollowMe() {
             <a href="https://www.instagram.com/stefano.montemarli/">
               <Image
                 className={style.social}
-                src={InstagramC}
+                src={Instagram}
                 alt="Instagram"
               />
             </a>
             <a href="https://www.tiktok.com/@stefanomontemarli?lang=it-IT">
-              <Image className={style.social} src={TikTokC} alt="TikTok" />
+              <Image className={style.social} src={TikTok} alt="TikTok" />
             </a>
           </div>
           <div className={style.div}>
             <a href="https://www.facebook.com/profile.php?id=100086771147797">
-              <Image className={style.social} src={FacebookC} alt="Facebook" />
+              <Image className={style.social} src={Facebook} alt="Facebook" />
             </a>
             <a href="https://www.linkedin.com/in/stefano-montemarli/">
-              <Image className={style.social} src={LinkedInC} alt="LinkedIn" />
+              <Image className={style.social} src={LinkedIn} alt="LinkedIn" />
             </a>
           </div>
         </div>

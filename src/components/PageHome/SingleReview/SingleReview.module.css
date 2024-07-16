@@ -36,19 +36,17 @@
 .name {
   align-self:  center;
   margin-left: 10px;
-  font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
 }
 
 .text {
-  font-family: "Maitree", sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 30px;
+  color: rgb(70, 70, 70);
 }
 
 .skill {
-  font-family: "Barlow Condensed", sans-serif;
   font-size: 22px;
 }
 

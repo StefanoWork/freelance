@@ -10,7 +10,8 @@
 .title {
   margin-bottom: 35px;
   text-align: left;
-  font-size: 95px;
+    font-size: var(--title-desktop);
+
 }
 
 .blogList {

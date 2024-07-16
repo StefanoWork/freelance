@@ -3,16 +3,16 @@
 import Image from "next/image";
 
 import style from "./Hero.module.css";
-import Circle from "../../../Images/Circle.png";
+import Circle from "../../../Images/Circle.webp";
 import PlayButton from "../../../Images/Play.png";
 import StopButton from "../../../Images/Close.png";
 import Bolla from "../../../Images/Bolla.png";
 import Oblique from "../../../Images/Oblique.png";
-import Email from "../../../Images/Social/Email.png";
-import Facebook from "../../../Images/Social/FacebookC.png";
-import Instagram from "../../../Images/Social/InstagramC.png";
-import TikTok from "../../../Images/Social/TikTokC.png";
-import LinkedIn from "../../../Images/Social/LinkedInC.png";
+import Email from "../../../Images/Social/Email.webp";
+import Facebook from "../../../Images/Social/Facebook.webp";
+import Instagram from "../../../Images/Social/Instagram.webp";
+import TikTok from "../../../Images/Social/TikTok.webp";
+import LinkedIn from "../../../Images/Social/LinkedIn.webp";
 
 import { useRef, useState } from "react";
 
@@ -28,7 +28,7 @@ export default function Hero() {
     return new Promise((resolve) => {
       const circularIframe = circularIframeRef.current;
       const iframe = document.createElement("iframe");
-      iframe.src = "https://fast.wistia.com/embed/medias/y9yfs8eki0";
+      iframe.src = "https://fast.wistia.net/embed/iframe/i457tph7l7";
       iframe.id = "video";
       iframe.className = style.video;
       circularIframe.appendChild(iframe);
@@ -90,8 +90,8 @@ export default function Hero() {
         </div>
       </div>
       <div className={style.heroDx}>
-        <Image src={Bolla} alt="Bolla" className={style.bolla} />
-        <Image src={Circle} alt="Circle" id="Circle" className={style.circle} />
+        <Image src={Bolla} alt="" className={style.bolla} />
+        <Image src={Circle} alt="Stefano Montemarli" id="Circle" className={style.circle} />
         <button className={style.play} id="play" onClick={PlayVideo}>
           <Image src={PlayButton} alt="Play"></Image>
         </button>
@@ -111,7 +111,7 @@ export default function Hero() {
         <div className={style.color2}></div>
       </div>
       <div className={style.divSocial}>
-        <a className={style.btSocial} href="mailto:stefanom.work@outlook.it">
+        <a className={style.btSocial} href="mailto:stefanom87.work@outlook.it">
           <Image src={Email} alt="Email" className={style.social} />
         </a>
         <a

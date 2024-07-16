@@ -144,13 +144,13 @@ rotate: 10deg;
 }
 
 
-  .bolla2, .bolla4 {
+.bolla2, .bolla4 {
   animation: float 8s ease-in-out infinite;
 }
- .bolla1 {
+.bolla1 {
   animation: float2 5s ease-in-out infinite;
 }
- .bolla3, .bolla5 {
+.bolla3, .bolla5 {
   animation: float3 11s ease-in-out infinite;
 }
 
@@ -197,6 +197,10 @@ rotate: 10deg;
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 120px;
+  }
+
+  .heroSx {
+    padding-left: 0px;
   }
 
   .myWork {

@@ -149,7 +149,7 @@ export default function Strategy({
 
   return (
     <div className={style.container} id="Strategy">
-      <h2 className={style.title}>Il Metodo</h2>
+      <h2 className={`${style.title} mulish`}>Il Metodo</h2>
       <div className={style.menu}>
         <Image src={Freccia} alt="" className={style.freccia} />
         <Image src={Puntini} alt="" className={style.puntini} />
@@ -193,10 +193,10 @@ export default function Strategy({
                   </div>
                   <div className={style.text}>
                     <div
-                      className={` ${style.strategyDescription}`}
+                      className={`${style.strategyDescription} maitree`}
                       ref={descriptionRefs.current[0]}
                     >
-                      <div className={style.numb}>
+                      <div className={`${style.numb} barlow`}>
                         {mItems[0].number + mItems[0].description}
                       </div>
                       {parse(descrizione1)}
@@ -214,10 +214,10 @@ export default function Strategy({
                   </div>
                   <div className={style.text}>
                     <div
-                      className={style.strategyDescription}
+                      className={`${style.strategyDescription} maitree`}
                       ref={descriptionRefs.current[1]}
                     >
-                      <div className={style.numb}>
+                      <div className={`${style.numb} barlow`}>
                         {mItems[1].number + mItems[1].description}
                       </div>
                       {parse(descrizione2)}
@@ -235,10 +235,10 @@ export default function Strategy({
                   </div>
                   <div className={style.text}>
                     <div
-                      className={style.strategyDescription}
+                      className={`${style.strategyDescription} maitree`}
                       ref={descriptionRefs.current[2]}
                     >
-                      <div className={style.numb}>
+                      <div className={`${style.numb} barlow`}>
                         {mItems[2].number + mItems[2].description}
                       </div>
                       {parse(descrizione3)}
@@ -259,10 +259,10 @@ export default function Strategy({
                   </div>
                   <div className={style.text}>
                     <div
-                      className={style.strategyDescription}
+                      className={`${style.strategyDescription} maitree`}
                       ref={descriptionRefs.current[3]}
                     >
-                      <div className={style.numb}>
+                      <div className={`${style.numb} barlow`}>
                         {mItems[3].number + mItems[3].description}
                       </div>
                       {parse(descrizione4)}
