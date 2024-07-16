@@ -35,7 +35,7 @@
   font-size: 21px;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: rgb(117, 117, 117);
+  color: rgb(54, 54, 54);
 }
 
 .secondDescription {
@@ -67,8 +67,8 @@
 
 .Bolla {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 0%;
+  right: 10%;
   rotate: 24deg;
   scale: 0.4;
 }
@@ -76,7 +76,7 @@
 .PuntiniBlu {
   position: absolute;
   top: 45%;
-  left: -10%;
+  right: -80%;
   rotate: 90deg;
   scale: 0.4;
 }
@@ -101,7 +101,7 @@
   }
 
   .PuntiniBlu {
-    left: 0%;
+    right: 0%;
     top: 20%;
     z-index: -1;
     opacity: 0.2;
@@ -119,6 +119,8 @@
 
 @media screen and (max-width: 900px) {
   .container{
+    flex-direction: column;
+    margin-top: 0px;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -126,13 +128,6 @@
 
 
 @media screen and (max-width: 750px) {
-  .container{
-    flex-direction: column;
-    margin-top: 0px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
   .content {
     flex-direction: column;
   }

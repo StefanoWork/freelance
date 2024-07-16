@@ -49,10 +49,9 @@ export default function Strategy({
 
   //Regola la visibilità di underline
   useEffect(() => {
-    // Copia cardRefs.current in una variabile
     const currentRefs = cardRefs.current;
 
-    // Utilizza currentRefs invece di cardRefs.current
+
     const observers = currentRefs.slice(0, -1).map((ref, index) => {
       const observer = new IntersectionObserver(
         ([entry]) => {
@@ -84,11 +83,10 @@ export default function Strategy({
   //Regola l'opacità quando le card entrano ed escono dal viewport
   useEffect(() => {
     // Se lo schermo è di dimensioni mobili, ritorna e non eseguire il codice seguente
-    if (window.matchMedia("(max-width: 600px)").matches) {
+    if (window.matchMedia("(max-width: 630px)").matches) {
       return;
     }
 
-    // Copia cardRefs.current in una variabile
     const currentRefs = cardRefs.current;
 
     const observers = currentRefs.slice(0, -1).map((ref, index) => {
@@ -184,7 +182,7 @@ export default function Strategy({
             <div className={style.containerLarge}>
               <div className={style.stackWrapper}>
                 <div className={`${style.stackCard} `} id="Ricerca">
-                  <div className={style.first} ref={cardRefs.current[0]}>
+                  <div className={style.imageCard} ref={cardRefs.current[0]}>
                     <Image
                       className={imgDxClass}
                       src={image1}
@@ -205,7 +203,7 @@ export default function Strategy({
                 </div>
 
                 <div className={`${style.stackCard}`} id="Design">
-                  <div className={style.first} ref={cardRefs.current[1]}>
+                  <div className={style.imageCard} ref={cardRefs.current[1]}>
                     <Image
                       className={imgDx2Class}
                       src={image2}
@@ -226,7 +224,7 @@ export default function Strategy({
                 </div>
 
                 <div className={` ${style.stackCard}`} id="Sviluppo">
-                  <div className={style.first} ref={cardRefs.current[2]}>
+                  <div className={style.imageCard} ref={cardRefs.current[2]}>
                     <Image
                       className={imgDx3Class}
                       src={image3}
@@ -246,11 +244,8 @@ export default function Strategy({
                   </div>
                 </div>
 
-                <div
-                  className={` ${style.stackCard} ${style.fourth}`}
-                  id="Lancio"
-                >
-                  <div className={style.first} ref={cardRefs.current[3]}>
+                <div className={` ${style.stackCard} ${style.ultimaCard}`} id="Lancio">
+                  <div className={style.imageCard} ref={cardRefs.current[3]}>
                     <Image
                       className={imgDx4Class}
                       src={image4}

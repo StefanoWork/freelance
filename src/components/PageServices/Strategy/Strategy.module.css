@@ -19,13 +19,12 @@
   display: flex;
   position: sticky;
   top: 8rem;
-  margin-bottom: 24rem;
+  margin-bottom: 27rem;
   justify-content: center;
 }
 
 .menuItem {
   margin-right: 55px;
-  
 }
 
 .titleMenu {
@@ -46,15 +45,14 @@
 .stackWrapper {
   display: flex;
   flex-direction: column;
-  gap:5rem;
+  gap: 23rem;
 }
 
 .stackCard {
   position: sticky;
   display: flex;
-  top: 16rem;
+  top: 19rem;
   padding-left: 30px;
-  
 }
 
 .number {
@@ -62,17 +60,15 @@
   font-size: 35px;
   display: flex;
   justify-content: center;
-  font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
 }
 
 .description {
   margin-left: 20px;
-  font-size: 33px;
+  font-size: 23px;
   font-weight: 400;
   margin: 0;
   margin-left: 8px;
-  font-family: "Barlow Condensed", sans-serif;
   color: var(--color-blu);
 }
 
@@ -105,7 +101,6 @@
   margin-top: -45px;
   rotate: 23deg;
 }
-
 .imgDxSocial2 {
   scale: 0.9;
   margin-top: -55px;
@@ -132,7 +127,7 @@
   rotate: 10deg;
 }
 
-.first {
+.imageCard {
   background: rgb(21,100,228);
   background: linear-gradient(180deg, rgba(21,100,228,1) 0%, rgba(110,109,109,1) 100%);
   margin-bottom: 14rem;
@@ -147,8 +142,8 @@
   width: 65%;
 }
 
-.fourth {
-  margin-bottom: -17rem;
+.ultimaCard {
+  margin-bottom: 2rem;
   top: 15rem;
 }
 
@@ -156,7 +151,7 @@
   position: absolute;
   top: 7%;
   right: -23%;
-  scale: 0.4;
+  scale: 0.2;
 }
 
 .puntini {
@@ -192,6 +187,17 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .strategyDescription {
+    font-size: 18px;
+  }
+
+  .numb {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
 
 @media screen and (max-width: 630px) {
   .container{
@@ -204,26 +210,26 @@
     display: none;
   }
 
+  .stackWrapper {
+    margin-top: 55px;
+    gap: 10rem;
+  }
+
   .stackCard {
     position: static;
     flex-direction: column;
-    top: 0rem;
+    top: 5rem;
   }
 
-  .first {
+  .imageCard {
     height: 8rem;
     width: 100%;
     top: 0rem;
-    margin-bottom: 25px
+    margin-bottom: 40px;
   }
 
   .text {
     width: 100%;
-  }
-
-  .numb {
-    font-size: 25px;
-    margin-bottom: 15px;
   }
 
   .strategyDescription {
@@ -232,9 +238,9 @@
     margin-left: 0px;
   }
 
-  .imgDx, .imgDx2, .imgDx3, .imgDx4, .imgDxSocial, .imgDxSocial2, .imgDxSocial3, .imgDxSocial4 {
+  .imgDx, .imgDx2, .imgDxSocial, .imgDxSocial2, .imgDxSocial3, .imgDxSocial4 {
     scale: 0.4;
-    margin-top: -160px;
+    margin-top: -200px;
   }
 
   .imgDxSocial2 {
@@ -242,23 +248,23 @@
   }
 
   .imgDx3 {
-    margin-top: -120px;
+    scale: 0.4;
+    margin-top: -160px;
   }
 
   .imgDx4 {
-    margin-top: -100px;
+    scale: 0.4;
+    margin-top: -150px;
   }
 
   .title {
     margin-bottom: 55px;
   }
 
-  .fourth{
+  .ultimaCard{
     top: 0rem;
     margin-bottom: 25px;
-  
   }
-
 }
 
 .color1 {

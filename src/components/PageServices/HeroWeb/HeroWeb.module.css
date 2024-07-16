@@ -20,7 +20,7 @@
   position: absolute;
   top: 30%;
   left: 10%;
-rotate: 10deg;
+  rotate: 10deg;
   z-index: 1;
   
 }
@@ -202,6 +202,10 @@ rotate: 10deg;
   .heroSx {
     padding-left: 0px;
   }
+  
+     .serviceImage1, .serviceImage2 {
+    scale: 0.8;
+  }
 
   .myWork {
     font-size: 17px;
@@ -230,8 +234,6 @@ rotate: 10deg;
     scale: 0.5;
     top: 20%;
   }
-
-
 }
 
 @media screen and (max-width: 850px) {
@@ -240,6 +242,10 @@ rotate: 10deg;
     padding-right: 7%;
     padding-top: 120px;
     height: auto;
+  }
+
+  .serviceImage1, .serviceImage2 {
+    scale: 0.6;
   }
 
   .myWork {
@@ -261,8 +267,6 @@ rotate: 10deg;
     scale: 0.5;
     top: 20%;
   }
-
-
 }
 
 @media screen and (max-width: 750px) {

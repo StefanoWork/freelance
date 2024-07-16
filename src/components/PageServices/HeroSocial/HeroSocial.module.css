@@ -202,7 +202,10 @@
   .myWork {
     font-size: 17px;
   }
-
+  
+  .serviceImage1, .serviceImage2 {
+    scale: 0.8;
+  }
   .myName {
     font-size: 65px;
   }
@@ -240,6 +243,11 @@
     padding-right: 7%;
     height: auto;
   }
+
+   .serviceImage1, .serviceImage2 {
+    scale: 0.6;
+  }
+
 
   .myWork {
     font-size: 15px;
