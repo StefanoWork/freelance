@@ -58,7 +58,7 @@ export default function Services() {
           <p className={`${style.description1} barlow`}>
             Realizzo siti web professionali e ottimizzati per garantire la massima visibilità 
             online. Ogni progetto è studiato su misura, con un design accattivante e 
-            funzionalità avanzate per migliorare l'esperienza utente 
+            funzionalità avanzate per migliorare l esperienza utente 
             e favorire la conversione.
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function Services() {
           </div>
           <p className={`${style.description2} barlow`}>
             Gestisco i tuoi social media in modo strategico 
-            per aumentare l'engagement e la visibilità del tuo brand. 
+            per aumentare l engagement e la visibilità del tuo brand. 
             Dalla creazione di contenuti alla pianificazione 
             editoriale, mi occupo di ogni aspetto per assicurare una presenza 
             online professionale.
