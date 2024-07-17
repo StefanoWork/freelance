@@ -23,15 +23,15 @@ export default function About() {
         <div className={style.divDx}>
           <h2 className={` ${style.title} mulish`}>Chi sono</h2>
           <p className={`${style.DescriptionDesktop} barlow`}>
-            Ciao, sono Stefano, un esperto in Web Design e Social Media
-            Marketing. La mia passione è utilizzare le mie competenze digitali
+            Ciao, sono <strong>Stefano, esperto in Web Design e Social Media
+            Marketing.</strong> La mia passione è utilizzare le mie competenze digitali
             per comunicare e creare soluzioni efficaci.
             <br />
-            <br /> Specializzato nella creazione di siti web professionali e
-            ottimizzati per i motori di ricerca, gestisco anche strategie di
-            social media marketing mirate a far crescere il tuo business online.
-            Il mio obiettivo è risparmiarti tempo e fornirti un supporto
-            continuo e affidabile.
+            <br /> Specializzato nella <strong>creazione di siti web professionali</strong> e
+            ottimizzati per i motori di ricerca, gestisco anche <strong>strategie di
+            social media marketing</strong> mirate a far crescere il tuo business online.
+            <strong> Il mio obiettivo è risparmiarti tempo e fornirti un supporto
+            continuo e affidabile.</strong>
             <br />
             <br /> Per saperne di più sulle mie competenze e su come posso
             aiutarti a raggiungere i tuoi obiettivi, visita le pagine dedicate

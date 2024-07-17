@@ -8,6 +8,19 @@
   }
 }
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
 :root {
   --background-color: rgb(255, 255, 255);
   --text-color: white;
@@ -54,8 +67,3 @@
   font-family: var(--font-maitree);
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
