@@ -1,0 +1,101 @@
+.container {
+    margin-top: 65px;
+    padding-left: 16%;
+    padding-right: 16%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 65px;
+    font-size: var(--title-desktop);
+    font-weight: 600;
+    text-align: start;
+}
+
+.subtitle {
+    font-size: 37px;
+}
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.chooseX, .chooseV {
+    width: 45%;
+}
+
+.choose1, .choose2 {
+    height: 150px;
+    border-radius: 10px;
+}
+
+.choose1 {
+    background-color: #e42121;
+}
+
+.choose2 {
+    background-color: #3384e7;
+}
+
+.li {
+    font-size: 21px;
+    margin-top: 15px;
+    font-weight: 300;
+    display: flex;
+}
+
+.pointRed, .pointBlu {
+  width: 11px;
+  height: 11px;
+  margin-right: 13px;
+  margin-top: 11px;
+  border-radius: 50%;
+}
+
+.pointRed{
+     background-color: #fc3c3c;
+}
+
+.pointBlu{
+    background-color: #3384e7;
+}
+
+@media screen and (max-width: 1100px) {
+  .title {
+    font-size: 63px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+   .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .subtitle {
+    font-size: 33px;
+  }
+
+  .choose {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .title {
+    font-size: 43px;
+  }
+
+    .subtitle {
+        font-size: 27px;
+    }
+}

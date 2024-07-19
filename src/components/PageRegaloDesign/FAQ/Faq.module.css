@@ -14,30 +14,24 @@
   text-align: end;
 }
 
-.name {
-  font-size: 29px;
-  color: black;
-  margin-bottom: 18px;
-  font-weight: 500;
-}
-
-.underline {
-  height: 2px;
-  width: 50px;
-  background-color: var(--color-blu);
+.row {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 24px;
 }
 
 .description {
-  margin-top: 5px;
-  font-size: 19px;
-  margin-bottom: 24px;
+  font-size: 22px;
   color: rgb(117, 117, 117);
 }
 
 .point {
   width: 11px;
   height: 11px;
-  margin-right: 7px;
+  margin-right: 13px;
+  margin-top: 11px;
+  background-color: #fc3c3c;
+  border-radius: 50%;
 }
 
 .x {
@@ -77,12 +71,9 @@
     font-size: 63px;
   }
 
-  .name, .description {
+  .description {
     width: 100%;
     margin-left: 0px;
-  }
-
-  .description {
     font-size: 17px;
   }
 
@@ -114,7 +105,7 @@
     font-size: 43px;
   }
 
-  .name, .description {
+  .description {
     width: 100%;
     margin-left: 0px;
   }
