@@ -13,6 +13,7 @@
   font-weight: 600;
   text-align: center;
   font-size: 85px;
+  line-height: 1;
 }
 
 .form {
@@ -108,8 +109,6 @@
   .container{
     flex-direction: column;
     margin-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
   .title {
@@ -127,7 +126,6 @@
     opacity: 0.3;
   }
 }
-
 
 
 .color1 {

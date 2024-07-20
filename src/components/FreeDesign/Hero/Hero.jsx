@@ -2,12 +2,11 @@ import style from "./Hero.module.css";
 import Image from "next/image";
 
 import Bolla from "../../../Images/Bolla.png";
-import FreeLesson from "../../../Images/FreeLesson.webp";
-import Indice from "../../../Images/Indice.png";
+import Mockup from "../../../Images/Mockup.webp";
 
 export default function HeroFree() {
   return (
-    <div className={style.heroDiv} id="Home">
+    <div className={style.container} id="Home">
       <div className={style.heroSx}>
         <div className={` ${style.myWork} mulish`}>
           Sei un Coach o un consulente?
@@ -31,11 +30,10 @@ export default function HeroFree() {
         <Image src={Bolla} alt="" className={style.bolla4} />
         <Image src={Bolla} alt="" className={style.bolla5} />
         <Image
-          src={FreeLesson}
+          src={Mockup}
           alt="Copertina"
-          className={style.serviceImage1}
+          className={style.mockup}
         />
-        <Image src={Indice} alt="Indice" className={style.serviceImage2} />
 
         <a href="#Contacts" className={`${style.download} barlow`}>
           Scarica ora

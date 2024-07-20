@@ -1,4 +1,4 @@
-.heroDiv {
+.container {
   display: flex;
   padding-top: 20px;
   overflow: hidden;
@@ -18,23 +18,13 @@
   width: 50%;
 }
 
-.serviceImage1 {
+.mockup {
   position: absolute;
-  top: 25%;
-  left: 10%;
-  scale:1.6;
-  rotate: 18deg;
-  z-index: 8;
-}
-
-
-.serviceImage2 {
-  position: absolute;
-  top: 20%;
-  right: 14%;
+  top: 15%;
+  left: 0%;
   scale:1;
   rotate: 18deg;
-  z-index: 7;
+  z-index: 15;
 }
 
 .bolla1 {
@@ -45,7 +35,6 @@
   opacity: 0.7;
 }
 
-
 .bolla2 {
   position: absolute;
   top: 70%;
@@ -54,7 +43,6 @@
   opacity: 0.5;
   z-index: 15;
 }
-
 
 .bolla3 {
   position: absolute;
@@ -65,8 +53,6 @@
   z-index: 0;
 }
 
-
-
 .bolla4 {
   position: absolute;
   top: 80%;
@@ -75,7 +61,6 @@
   opacity: 0.5;
   z-index: 15;
 }
-
 
 .bolla5 {
   position: absolute;
@@ -122,30 +107,6 @@
   }
   100% {
     transform: translatex(0px) translateY(0px) ;
-  }
-}
-
-@keyframes phone1 {
-  0% {
-    transform: translatey(0px) translatex(0px)  rotate(0deg) scale(1);
-  }
-  50% {
-    transform: translatey(-40px) translatex(40px)  rotate(8deg) scale(1.2);
-  }
-  100% {
-    transform: translatey(0px) translatex(0px) rotate(0deg) scale(1);
-  }
-}
-
-@keyframes phone2 {
-  0% {
-    transform: translatey(0px) translatex(0px)  rotate(0deg) scale(1);
-  }
-  50% {
-    transform: translatey(15px) translatex(-25px)  rotate(-4deg) scale(1.4);
-  }
-  100% {
-    transform: translatey(0px) translatex(0px) rotate(0deg) scale(1);
   }
 }
 
@@ -207,17 +168,17 @@
 }
 
 .download {
-  border-radius: 22px;
   display: flex;
   position: absolute;
   top: 60%;
-  right: 42%;
+  right: 62%;
   padding: 70px 40px;
-  margin-top: 15px;
   background-color: #083358;
   border: none;
-  border-radius: 100%;
+  border-radius: 50%;
   font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: scale 0.3s ease;
@@ -254,24 +215,20 @@
      height: 600px;
   }
 
-  .serviceImage2 {
-    display: none;
-  }
-
   .myDescription {
     font-size: 20px;
     width: 250px;
   }
 
   .download {
-    padding: 50px 30px;
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
   }
   
 }
 
 @media screen and (max-width: 830px) {
-  .heroDiv {
+  .container {
     display: block;
   }
 
@@ -295,16 +252,11 @@
      height: 600px;
   }
 
-.serviceImage1 {
-  scale: 1.29;
-    top: 5%;
-  left: 10%;
-}
-
-  .serviceImage2 {
-    display: none;
+  .mockup {
+    scale: 0.8;
+    top: 0%;
+    left: 10%;
   }
-
 
   .myDescription {
     font-size: 20px;
@@ -313,10 +265,52 @@
 
   .download {
     font-size: 30px;
-      top: 60%;
-  right: 28%;
+    top: -15%;
+    right: 28%;
   }
-  
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .heroSx {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .heroDx {
+    height: 350px;
+  }
+
+  .myDescription {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .myName {
+    font-size: 30px;
+  }
+
+  .mockup {
+    top: 0%;
+    left: 5%;
+  }
+
+  .download {
+    font-size: 20px;
+    top: -5%;
+    right: 35%;
+   padding: 30px 10px;
+    align-items: center;
+  }
+
+  .bolla2, .bolla4 {
+    display: none;
+  }
 }
 
 .color1 {
