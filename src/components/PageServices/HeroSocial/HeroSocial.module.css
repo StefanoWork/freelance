@@ -268,8 +268,6 @@
     scale: 0.5;
     top: 20%;
   }
-
-
 }
 
 @media screen and (max-width: 750px) {
@@ -319,6 +317,11 @@
   }
 
   .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .bolla2 {
     scale: 0.5;
     top: 20%;
   }

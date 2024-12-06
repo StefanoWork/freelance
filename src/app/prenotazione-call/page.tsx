@@ -18,7 +18,7 @@ export default function Prenotazione() {
     <>
         <Navbar/>
         <Cal 
-            calLink="stefanowork/call-discovery"
+            calLink="stefano87work/call-discovery"
             style={{width:"100%",height:"100%",overflow:"scroll", marginTop:"120px"}}
             config={{layout: 'month_view'}}
 	    />

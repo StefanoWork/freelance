@@ -169,8 +169,8 @@ export default function Strategy({
                 className={style.underline}
                 style={{
                   opacity: visibleCard === index ? 1 : 0,
-                }}
-              ></div>
+                }}>             
+              </div>
             </a>
           </div>
         ))}
@@ -181,7 +181,7 @@ export default function Strategy({
           <div className={style.paddingGlobal}>
             <div className={style.containerLarge}>
               <div className={style.stackWrapper}>
-                <div className={`${style.stackCard} `} id="Ricerca">
+                <div className={`${style.stackCard} `} id="1">
                   <div className={style.imageCard} ref={cardRefs.current[0]}>
                     <Image
                       className={imgDxClass}
@@ -202,7 +202,7 @@ export default function Strategy({
                   </div>
                 </div>
 
-                <div className={`${style.stackCard}`} id="Design">
+                <div className={`${style.stackCard}`} id="2">
                   <div className={style.imageCard} ref={cardRefs.current[1]}>
                     <Image
                       className={imgDx2Class}
@@ -223,7 +223,7 @@ export default function Strategy({
                   </div>
                 </div>
 
-                <div className={` ${style.stackCard}`} id="Sviluppo">
+                <div className={` ${style.stackCard}`} id="3">
                   <div className={style.imageCard} ref={cardRefs.current[2]}>
                     <Image
                       className={imgDx3Class}
@@ -244,7 +244,7 @@ export default function Strategy({
                   </div>
                 </div>
 
-                <div className={` ${style.stackCard} ${style.ultimaCard}`} id="Lancio">
+                <div className={` ${style.stackCard} ${style.ultimaCard}`} id="4">
                   <div className={style.imageCard} ref={cardRefs.current[3]}>
                     <Image
                       className={imgDx4Class}

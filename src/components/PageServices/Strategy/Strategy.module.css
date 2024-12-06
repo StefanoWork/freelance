@@ -35,6 +35,7 @@
 .underline {
   height: 4px;
   width: 100%;
+  background-color: var(--blu);
   transition: opacity 0.5s ease;
 }
 
@@ -244,7 +245,7 @@
   }
 
   .imgDxSocial2 {
-    margin-top: -180px;
+    margin-top: -220px;
   }
 
   .imgDx3 {
