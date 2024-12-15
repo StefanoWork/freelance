@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import Video1 from "../../components/PageRegaloDesign/Video1/Video1";
-import Video2 from "../../components/PageRegaloDesign/Video2/Video2";
 import Faq from "../../components/PageRegaloDesign/FAQ/Faq";
 import Choose from "../../components/PageRegaloDesign/Choose/Choose";
 import CTA from "../../components/PageHome/CTA/CTA";
@@ -36,11 +35,10 @@ export default function RegaloDesign() {
         </head>
 
         <Video1 />
-        <CTA href="https://cal.com/stefanowork/call-discovery"/>
-        {/* <Video2 /> */}
+        <CTA href="https://cal.com/stefano87work/call-discovery"/>
         <Faq />
         <Choose />
-        <CTA href="https://cal.com/stefanowork/call-discovery"/>
+        <CTA href="https://cal.com/stefano87work/call-discovery"/>
         <Footer />   
     </>
     )
