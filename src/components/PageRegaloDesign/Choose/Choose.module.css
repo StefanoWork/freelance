@@ -80,9 +80,7 @@
     font-size: 33px;
   }
 
-  .choose {
-    flex-direction: column;
-  }
+  
 }
 
 @media screen and (max-width: 630px) {
@@ -98,4 +96,14 @@
     .subtitle {
         font-size: 27px;
     }
+
+    .choose {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .chooseX, .chooseV {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
