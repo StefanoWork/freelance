@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Mulish, Barlow_Condensed, Maitree } from "next/font/google";
+import { Mulish, Barlow_Condensed, Maitree, Caveat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -28,6 +28,12 @@ const maitree_init = Maitree({
   variable: "--font-maitree",
 });
 
+const caveat_init = Caveat({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-caveat",
+});
+
 const iubendaBannerConfig: IubendaCookieSolutionBannerConfigInterface = {
   siteId: 3411238,
   cookiePolicyId: 87039527,
@@ -54,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${mulish_init.variable} ${barlow_condensed_init} ${maitree_init}`}>
+      <body className={`${mulish_init.variable} ${barlow_condensed_init.variable} ${maitree_init.variable} ${caveat_init.variable}`}>
         <IubendaProvider bannerConfig={iubendaBannerConfig}>
           {children}
         </IubendaProvider>

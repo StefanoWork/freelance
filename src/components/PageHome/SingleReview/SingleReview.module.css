@@ -4,26 +4,28 @@
 
 .Sx {
   overflow: hidden;
-  border-radius: 50%;
-  width: 405px;
-  height: 405px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 50%;
 }
 
-.video {
-  border-radius: 50%;
-  width: 430px;
-  height: 430px;
-  scale: 1.8;
+.media, .image {
+  width: 100%;
+  height: 800px;
+  border-radius: 15px;
+}
+
+.image {
+  object-fit:fill;
 }
 
 .Dx {
-  margin-left: 65px;
+  margin: 25px;
   width: 50%;
- 
 }
 
 .author {
- display: flex;
+  display: flex;
   margin-bottom: 15px;
 }
 
@@ -36,97 +38,59 @@
 .name {
   align-self:  center;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 23px;
+  line-height: 1.3;
   margin-bottom: 20px;
-  line-height: 30px;
-  color: rgb(70, 70, 70);
-}
-
-.skill {
-  font-size: 22px;
-}
-
-.stars {
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.star {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color:#2176ff;
-  margin-right: 5px;
-}
-
-.starEmpty {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #2176ff;
-  margin-right: 5px;
-  opacity: 0.4;
 }
 
 @media screen and (max-width: 1100px) {
 
-  .text {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .stelline {
-    display: none;
-  }
-
-  .Sx {
-    width: 310px;
-    height: 310px;
-    justify-content: center;
-    display: flex;
-  }
-
-  .video {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 @media screen and (max-width: 630px) {
   .review {
     flex-direction: column;
+    padding: 2px;
   }
 
   .Dx {
-    order: 1;
-    margin-left: 0px;
     width: 100%;
+    order: 1;
+    margin: 0;
   }
 
   .text {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .stelline {
-    display: none;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
   }
 
   .Sx {
-    order: 2;
-    width: 330px;
-    height: 330px;
+    width: 100%;
+    padding: 0px;
     justify-content: center;
-    display: flex;
+    order: 2;
   }
 
-  .video {
-    width: 100%;
-    height: 100%;
+  .author {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .name {
+    font-weight: 500;
+  }
+
+  .review.hasVideo .text {
+    display: none;
+  }
+
+  .review.noVideo .Sx {
+    display: none;
   }
 }

@@ -2,8 +2,8 @@ import style from "./HeroWeb.module.css";
 import Image from "next/image";
 
 import Bolla from "../../../Images/Bolla.png";
-import Laptop1 from "../../../Images/PC1.png";
-import Laptop2 from "../../../Images/PC2.png";
+import Laptop1 from "../../../Images/Phone1.png";
+import Laptop2 from "../../../Images/Phone1.png";
 
 export default function HeroWeb() {
   return (

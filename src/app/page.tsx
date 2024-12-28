@@ -39,16 +39,19 @@ export default function Home() {
           content="0ijiX29zHbhM4fP7fjQ6Imgd3PbpjZ2Xir1rKPR6eZM"
         />
         <link rel="canonical" href="https://www.stefanomontemarli.it" />
+        <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
       </head>
       <Navbar />
       <Call />
       <Hero />
       <About />
-      <Services />
       <Method />
-      <CTA href="#Contacts"/>
       <Portfolio />
       <Opinion />
+      <Services />
+      <CTA href="#Contacts"/>
+    
+      
       {/* <Blog /> */}
       <Contact />
       <FollowMe />

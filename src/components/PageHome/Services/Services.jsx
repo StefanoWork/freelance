@@ -2,97 +2,116 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
+import { useMediaQuery } from 'react-responsive';
 import style from "./Services.module.css";
-import Freccia from "../../../Images/FrecciaLunga.png";
-import Puntini from "../../../Images/PuntiniBlu.png";
-import Phone from "../../../Images/Phone.png";
-import Phone1 from "../../../Images/Phone1.png";
-import PC1 from "../../../Images/PC1.png";
-import PC2 from "../../../Images/PC2.png";
 
-import { useRef, useEffect, useState } from "react";
+import Check from "../../../Images/check.png";
+import Puntini from "../../../Images/PuntiniBlu.png";
+
+const gridData = [
+  { col1: "Strategia personalizzata", col2: Check.src, col3: Check.src },
+  { col1: "Piano editoriale", col2: Check.src, col3: "-" },
+  { col1: "Realizzazione stile grafico", col2: Check.src, col3: Check.src },
+  { col1: "Creazione contenuti", col2: Check.src, col3: "-" },
+  { col1: "Ottimizzazione ricerca Google", col2: "-", col3: Check.src },
+  { col1: "Analisi dati", col2: Check.src, col3: Check.src },
+];
+
+const gridDataMobile = [
+  { col2: "Strategia personalizzata", col3: "Strategia personalizzata" },
+  { col2: "Piano editoriale", col3: "Realizzazione stile grafica" },
+  { col2: "Realizzazione stile", col3: "Realizzazione bozze animate" },
+  { col2: "Creazione contenuti", col3: "SEO" },
+  { col2: "Analisi dati", col3: "Analisi dati" },
+  { col2: "Consulenza continuativa", col3: "Consulenza continuativa" },
+];
+
 
 export default function Services() {
-  const titleRef1 = useRef(null);
-  const underlineRef1 = useRef(null);
-  const titleRef2 = useRef(null);
-  const underlineRef2 = useRef(null);
 
-  const [isHovered1, setIsHovered1] = useState(false);
-  const [isHovered2, setIsHovered2] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (titleRef1.current && underlineRef1.current) {
-      underlineRef1.current.style.width = `${titleRef1.current.offsetWidth}px`;
-    }
-    if (titleRef2.current && underlineRef2.current) {
-      underlineRef2.current.style.width = `${titleRef2.current.offsetWidth}px`;
-    }
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+
+  const dataToMap = isMobile ? gridDataMobile : gridData;
+
+  if (!dataToMap) {
+    return null;
+  }
 
   return (
     <div className={style.container} id="Services">
-      <h2 className={` ${style.title} mulish`}>I miei servizi</h2>
-      <Image src={Freccia} className={style.freccia} alt="" />
+      <h2 className={` ${style.title} mulish`}>Accedi ai miei servizi</h2>
 
-      <div className={style.divService}>
-        <Link
-          href="/servizi/web-design"
-          className={style.imgService}
-          onMouseEnter={() => setIsHovered1(true)}
-          onMouseLeave={() => setIsHovered1(false)}
-        >
-          <Image className={style.pc1} src={PC1} alt="Laptop" />
-          <Image className={style.pc2} src={PC2} alt="Laptop" />
-        </Link>
-
-        <div className={style.textService1}>
-          <h3 ref={titleRef1} className={`${style.serviceTitle1} barlow`}>
-            Web Design
-          </h3>
-          <div
-            ref={underlineRef1}
-            className={`${style.underline} ${isHovered1 ? style.show : ""}`}
-          ></div>
-          <p className={`${style.description1} barlow`}>
-            <strong>Realizzo siti web professionali</strong> e ottimizzati per garantire la massima visibilità 
-            online. <strong>Ogni progetto è studiato su misura</strong>, con un design accattivante e 
-            funzionalità avanzate per migliorare l esperienza utente 
-            e favorire la conversione.
-          </p>
-        </div>
-      </div>
-
-      <div className={style.divService}>
-        <div className={style.textService2}>
-          <div className={style.titleContainer}>
-            <h3 ref={titleRef2} className={`${style.serviceTitle2} barlow`}>
-              Social Media
-            </h3>
-            <div
-              ref={underlineRef2}
-              className={`${style.underline} ${isHovered2 ? style.show : ""}`}
-            ></div>
+      <div className={style.containerService}>
+        <div className={style.cardContainer}>
+          <div className={style.sx}>
           </div>
-          <p className={`${style.description2} barlow`}>
-            <strong>Gestisco i tuoi social media in modo strategico </strong>
-            per aumentare l engagement e la visibilità del tuo brand. 
-            Dalla creazione di contenuti alla pianificazione 
-            editoriale, <strong>mi occupo di ogni aspetto</strong> per assicurare una presenza 
-            online professionale.
-          </p>
+          <div className={style.dx}>
+            <div className={style.cardServiceS}>
+              <p className={` ${style.nameService} mulish`}>Social Media</p>
+              <p className={style.description}>I tuoi social gestiti con una strategia personalizzata</p>
+              <Link
+                href="/servizi/social-media"
+                className={style.buttonService}>
+                  Scopri
+              </Link>
+            </div>
+
+            <div className={style.cardServiceW}>
+              <p className={` ${style.nameService} mulish`}>Web Design</p>
+              <p className={style.description}>Il sito creato su misura per il tuo target</p>
+              <Link
+                href="/servizi/web-design"
+                className={style.buttonService}>
+                  Scopri
+              </Link>
+            </div>
+          </div>        
         </div>
-        <Link
-          href="/servizi/social-media"
-          className={style.imgService}
-          onMouseEnter={() => setIsHovered2(true)}
-          onMouseLeave={() => setIsHovered2(false)}
-        >
-          <Image src={Phone} className={style.phone1} alt="Smartphone" />
-          <Image src={Phone1} className={style.phone2} alt="Smartphone" />
-        </Link>
+        <div className={style.functionService}>
+            {dataToMap.map((row, rowIndex) => (
+              <div className={style.row} key={rowIndex}>
+                <div className={style.colorRow}></div>
+                <div className={style.column}>
+                  <div  className={style.col1}>{row.col1}</div>
+                  <div className={style.colDx}>
+                    <div  className={style.col2}>
+                       {row.col2.endsWith('.png') || row.col2.endsWith('.webp') ? (
+                        <Image src={row.col2} alt="Check" height={40} width={40} />
+                      ) : (
+                        row.col2
+                      )}
+                    </div>
+                    <div  className={style.col2}>
+                        {row.col3.endsWith('.png') || row.col3.endsWith('.webp') ? (
+                        <Image src={row.col3} alt="Check" height={40} width={40} />
+                      ) : (
+                        row.col3
+                      )}
+                    </div>
+                  </div>
+                </div>
+               
+              
+              </div>
+            ))}
+        </div>
+           
       </div>
+     
 
       <Image className={style.puntini} src={Puntini} alt="" />
       <div className={style.color3}></div>

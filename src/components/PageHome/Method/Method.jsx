@@ -1,13 +1,18 @@
+"use client";
+
 import style from "./Method.module.css";
 import Image from "next/image";
+import Lottie from 'lottie-react';
+
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import circle from "../../../Images/CerchioS.png";
 
-import X from "../../../Images/X.png";
-import XEmpty from "../../../Images/XEmpty.png";
-import Puntini from "../../../Images/Puntini.png";
+import Puzzle from "../../../Images/Icone/Puzzle.json";
+import Creativity from "../../../Images/Icone/Creativity.json";
+import Analisi from "../../../Images/Icone/Analisi.png";
 
 export default function Method() {
   // const theme = useSelector((state) => state.theme);
@@ -18,75 +23,110 @@ export default function Method() {
 
         <Container className={style.grid}>
           <Row className="flex-column flex-sm-row">
-            <Col sm={12} className={`${style.name} barlow `}>
-              Servizio completo <div className={style.underline}></div>
-            </Col>
-            <Col sm={12}>
-              <p className={style.description}>
-                Offro un servizio completo di web design e gestione dei social
-                media, assicurando coerenza nel design e nella comunicazione del
-                tuo brand.
+            <Col sm={6} className={style.text}>
+              <div className={style.stepContainer}>
+                <div className={style.step}>
+                  <Image src={circle} alt="" className={style.circle} />
+                  <p className={`${style.number} barlow `}>1</p>
+                </div>
+              </div>
+              <p className={`${style.name} barlow `}>Strategia unificata</p>
+              <p className={`${style.description} barlow mr-md-36 `}>
+               Creo una strategia personalizzata che può includere sia il sito web che i 
+               social media, mantenendo uno stile armonioso e coerente. Anche se si 
+               tratta di servizi distinti, la comunicazione sarà sempre autentica e 
+               mirata al tuo pubblico ideale.
               </p>
             </Col>
-            <Col sm={12} className={`${style.name} barlow `}>
-              Creatività <div className={style.underline}></div>
+            <Col sm={6} className={style.animation}>
+              <Lottie animationData={Puzzle} />
             </Col>
-            <Col sm={12}>
-              <p className={style.description}>
-                Non mi limito a copiare quello che fanno gli altri, ma
-                sperimento nuove idee e soluzioni. Nessun template già pronto,
-                ma 100% personalizzato.
+          </Row>
+
+          <Row className="flex-column flex-sm-row">
+            <Col sm={6} className={style.animation}>
+              <Lottie animationData={Creativity} alt="" className={style.icon} />
+            </Col>
+            <Col sm={6} className={style.text}>
+              <div className={style.stepContainer}>
+                <div className={`${style.step} ml-20`}>
+                  <Image src={circle} alt="" className={style.circle} />
+                  <p className={`${style.number} barlow `}>2</p>
+                </div>
+              </div>
+              <p className={`${style.name} barlow ml-md-20`}>Creatività senza limiti</p>
+              <p className={`${style.description} barlow ml-md-20`}>
+                Non esistono soluzioni preconfezionate. 
+                Ogni progetto è una tela bianca dove sperimento idee 
+                originali e design su misura. Ogni elemento è pensato per 
+                distinguerti dalla concorrenza e rappresentare fedelmente 
+                i tuoi valori.
               </p>
             </Col>
           </Row>
-          <Row className="flex-column flex-sm-row">
-            <Col sm={12} className={`${style.name} barlow `}>
-              Report e statistiche <div className={style.underline}></div>
-            </Col>
-            <Col sm={12}>
-              <p className={style.description}>
-                Ti invio report dettagliati con le statistiche e le analisi, per
-                mostrarti i risultati ottenuti e le possibili azioni da
-                intraprendere.
+
+         <Row className="flex-column flex-sm-row">
+            <Col sm={6} className={style.text}>
+              <div className={style.stepContainer}>
+                <div className={style.step}>
+                  <Image src={circle} alt="" className={style.circle} />
+                  <p className={`${style.number} barlow `}>3</p>
+                </div>
+              </div>
+              <p className={`${style.name} barlow `}>Analisi continua</p>
+              <p className={`${style.description} barlow mr-md-36 `}>
+              Non basta creare: bisogna misurare, analizzare e migliorare. 
+              Ti fornisco report dettagliati e analizziamo insieme i dati per ottimizzare costantemente la tua 
+              presenza online con strategie basate su numeri reali.
               </p>
             </Col>
-          </Row>
-          <Row className="flex-column flex-sm-row">
-            <Col sm={12} className={`${style.name} barlow `}>
-              Contenuti unici <div className={style.underline}></div>
+            <Col sm={6} className={style.animation}>
+              <Image src={Analisi} alt="" className={style.icon} />
             </Col>
-            <Col sm={12}>
-              <p className={style.description}>
-                Creo contenuti unici e personalizzati per catturare
-                l`&lsquo;`attenzione del tuo pubblico, promuovendo
-                l`&lsquo;`interazione e l`&lsquo;`engagement con il tuo brand.
+          </Row>
+
+          <Row className="flex-column flex-sm-row">
+            <Col sm={6} className={style.animation}>
+              <Image src={circle} alt="" className={style.altra} />
+            </Col>
+            <Col sm={6} className={style.text}>
+              <div className={style.stepContainer}>
+                <div className={`${style.step}  ml-md-20`}>
+                  <Image src={circle} alt="" className={style.circle} />
+                  <p className={`${style.number} barlow `}>4</p>
+                </div>
+              </div>
+              <p className={`${style.name} barlow ml-md-20`}>Contenuti che catturano</p>
+              <p className={`${style.description} barlow ml-md-20`}>
+                Dal design del sito ai post sui social, ogni contenuto è pensato per 
+                raccontare la tua storia in modo autentico e coinvolgente. 
+                L'obiettivo è trasformare i visitatori e i follower in clienti 
+                fedeli e appassionati del tuo brand.
               </p>
             </Col>
           </Row>
 
           <Row className="flex-column flex-sm-row">
-            <Col sm={12} className={`${style.name} barlow `}>
-              Coinvolgimento
-              <div className={style.underline}></div>
-            </Col>
-            <Col sm={12}>
-              <p className={style.description}>
-                Collaboro strettamente con te in ogni fase del processo di
-                sviluppo, ascoltando attentamente le tue esigenze e fornendo
-                consulenza esperta, con la possibilità di seguire il progetto in
-                ogni sua fase.
+            <Col sm={6} className={style.text}>
+              <div className={style.stepContainer}>
+                <div className={style.step}>
+                  <Image src={circle} alt="" className={style.circle} />
+                  <p className={`${style.number} barlow `}>5</p>
+                </div>
+              </div>
+              <p className={`${style.name} barlow `}>Collaborazione costante</p>
+              <p className={`${style.description} barlow mr-md-36`}>
+                Ti coinvolgo in ogni fase del processo, 
+                dall'idea iniziale fino alla realizzazione finale. 
+                Ascolto le tue esigenze, ti offro consulenza e ti tengo 
+                aggiornato su ogni progresso.
               </p>
+            </Col>
+            <Col sm={6} className={style.animation}>
+              <Image src={circle} alt="" className={style.altra} />
             </Col>
           </Row>
         </Container>
-
-        <Image src={X} alt="" className={style.x} />
-        <Image src={XEmpty} alt="" className={style.xEmpty} />
-        <Image src={Puntini} alt="" className={style.puntini} />
-
-        <div className={style.color2}></div>
-        <div className={style.color3}></div>
-        <div className={style.color4}></div>
       </div>
     </>
   );

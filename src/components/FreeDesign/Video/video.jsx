@@ -5,7 +5,7 @@ export default function Video() {
     <div className={style.container}>
       <h2 className={` ${style.title} mulish`}>Mi presento</h2>
       <iframe
-        src="https://fast.wistia.com/embed/medias/o9mv8sraq9"
+        src="https://fast.wistia.net/embed/iframe/wiik88xj5j?seo=false&videoFoam=true"
         title="Video"
         className={style.video}
       ></iframe>

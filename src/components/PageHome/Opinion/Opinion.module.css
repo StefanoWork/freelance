@@ -1,17 +1,95 @@
 .container {
   margin-top: 180px;
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 8%;
+  padding-right: 8%;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .title {
-  margin-bottom: 65px;
-  font-size: var(--title-desktop);
-  font-weight: 600;
-  text-align: end;
+  display: inline;
+  word-wrap: break-word;
+  word-break: break-word;
+  align-items: center;
+  margin-bottom: 48px;
+  line-height: 1.2;
+  font-size: 71px;
+  font-weight: 800;
+  text-align: start;
+}
+
+.imageTitle {
+  display: inline;
+  vertical-align: baseline;
+  margin: 0 0.3em;
+  border-radius: 10px;
+  height: 65px;
+  width: 55px;
+  object-fit: cover;
+}
+
+.opinionContainer {
+  padding-top: 40px;
+}
+
+.titleCarousel {
+  font-size: 37px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  margin-top: 65px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonBack {
+  background-color: var(--blu-scuro);
+  color: white;;
+  padding: 13px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 33px;
+  margin-right: 20px;
+}
+
+.buttonForward {
+  background-color: var(--blu-scuro);
+  color: white;
+  padding: 13px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 33px;
+}
+
+.buttonBack:hover, .buttonForward:hover {
+  background-color: var(--blu);
+}
+
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.carousel {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  margin-right: 45px;
+  max-height: 500px;
+}
+
+
+.card {
+  flex: 0 0 45%;
+  border-radius: 18px;
+  width: 500px;
+  height: 400px;
+  margin-right: 35px;
 }
 
 .bolla {
@@ -66,8 +144,31 @@
     margin-top: 95px;
   }
 
+  .carousel {
+    margin-right: 0;
+    max-height: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+    flex: 0 0 100%;
+  }
+
   .title {
-    font-size: 43px;
+    font-size: 35px;
+  }
+
+  .imageTitle {
+    height: 45px;
+    width: 35px;
+  }
+
+  .buttonContainer {
+    display: block;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 25px;
   }
 
   .puntini {
@@ -77,8 +178,7 @@
   }
 
   .bolla {
-    scale: 0.3;
-    top: 1%;
+    display: none;
   }
   
 }

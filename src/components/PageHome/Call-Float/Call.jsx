@@ -20,11 +20,11 @@ export default function Call() {
 
     const onScroll = () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        // downscroll code
+      if (scrollTop < lastScrollTop) {
+        // upscroll code
         div.current.classList.remove(style.visible);
       } else {
-        // upscroll code
+        // downscroll code
         div.current.classList.add(style.visible);
       }
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling

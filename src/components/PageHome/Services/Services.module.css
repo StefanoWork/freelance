@@ -1,152 +1,131 @@
 .container {
-  margin-top: 90px;
-  padding-left: 12%;
-  padding-right: 12%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  margin-top: 70px;
+  padding-top: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: var(--blu-scuro);
+  border-radius: 25px;
 }
 
 .title {
   margin-bottom: 65px;
-  font-size: var(--title-desktop);
+  margin-top: 125px;
+  font-size: 80px;
   font-weight: 700;
+  text-align: center;
+  color: white;
 }
 
-.freccia {
-  scale: 0.5;
-  position: absolute;
-  right: -15%;
-  top: -8%;
-  display: none;
+.containerService {
+  width: 100%;
+  margin-top: 65px;
+  padding: 5%;
 }
 
-.divService {
+.cardContainer {
   display: flex;
-  margin-top: 85px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 14%;
+  background-color: var(--blu-scuro);
+  justify-content: space-around;
+  padding-bottom: 45px;
 }
 
-.imgService {
-  position: relative;
-  margin-left: 25px;
-  margin-right: 25px;
+.dx {
+  display: flex;
+  width: 55%;
+}
+
+.cardServiceS, .cardServiceW {
+  flex: 1;
+  margin-left: 8%;
+  width: 300px;
+  height: 290px;
   border-radius: 25px;
-  width: 50%;
-  height: 240px;
-  background: rgb(15, 68, 113);
-  background: linear-gradient(
-    180deg,
-    rgba(15, 68, 113, 1) 0%,
-    rgba(51, 51, 51, 1) 100%
-  );
-  display: flex;
-  transition: scale 0.7s ease-out;
-}
-
-.phone1 {
-  object-fit: contain;
-  transition: transform 0.7s ease-out;
-  transform: translateY(-10px) scale(1) translateX(20px);
-}
-
-.phone2 {
-  object-fit: contain;
-  transform: translateY(-30px) scale(0.9);
-  transition: transform 0.7s ease-out, scale 0.7s ease-out;
-}
-
-.imgService:hover .phone1 {
-  transform: scale(1.2) translateX(20px) translateY(-10px);
-}
-
-.imgService:hover .phone2 {
-  transform: translateY(-70px) translateX(-30px) scale(0.7);
-}
-
-.pc1 {
-  scale: 0.9;
-  transform: translateX(20px);
-  transition: transform 0.7s ease-out;
-}
-
-.pc2 {
-  scale: 0.8;
-  transform: translateX(-20px) translateY(-60px);
-  transition: transform 0.7s ease-out;
-}
-
-.imgService:hover .pc1 {
-  transform: translateX(30px) scale(0.7) rotate(-8deg) translateY(-20px);
-}
-
-.imgService:hover .pc2 {
-  transform: translateX(-70px) rotate(8deg) scale(1.1) translateY(-20px);
-}
-
-.textService1,
-.textService2 {
-  width: 50%;
-}
-
-.textService1 {
-  margin-left: 10px;
-}
-
-.textService2 {
-  margin-right: 10px;
-}
-
-.titleContainer {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
-.underline {
-  visibility: hidden;
-  display: block;
-  opacity: 0;
-  transition: opacity 1.1s ease-in-out;
-  background-color: #2176ff;
-  height: 4px;
+.cardServiceS {
+  background-color: var(--rosso);
+}
+
+.cardServiceW {
+  background-color: var(--blu);
+}
+
+.nameService {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.buttonService {
+  border-radius: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  transition: scale 0.7s ease-out;
+  background-color: var(--blu-scuro);
+  text-decoration: none;
+  color: white;
+}
+
+.buttonService:hover {
+  scale: 1.1;
+  background-color: black;
+}
+
+
+.colorRow {
+  height: 1px;
   width: 100%;
+  background-color: lightgray;
 }
 
-.underline.show {
-  visibility: visible;
-  opacity: 1;
+.column {
+  display: flex;
+  align-items: center;
 }
 
-.serviceTitle1 {
-  font-size: 64px;
-  margin-top: 5px;
-  font-weight: 400;
+.col1 {
+  width: 34%;
+  font-size: 25px;
+  color: white;
 }
 
-.serviceTitle2 {
-  font-size: 64px;
-  font-weight: 400;
-  margin-top: 5px;
+.colDx {
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
 }
 
-.description1 {
-  font-size: 19px;
-  text-align: left;
-  color: rgb(117, 117, 117);
+.col2 {
+  width: 260px;
+  height: 70px;
+  font-size: 20px;
+  margin-left: 35px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.description2 {
-  font-size: 19px;
-  text-align: end;
-   color: rgb(117, 117, 117);
-}
 
 @media (min-width: 1200px) {
-  .imgService:hover {
-    scale: 1.1;
-    background: #2176ff;
-    background: linear-gradient(180deg, #2176ff, rgba(51, 51, 51, 1) 100%);
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -159,58 +138,7 @@
   .title {
     font-size: 68px;
     margin-bottom: 30px;
-  }
-  .freccia {
-    scale: 0.2;
-    left: -5%;
-    top: -4%;
-  }
-
-  .pc1, .pc2 {
-    scale: 0.6;
-  }
-
-  .pc1 {
-    transform: translateX(-90px) translateY(-60px) scale(1.2);
-  }
-
-  .pc2 {
-    transform: translateX(-150px) translateY(-20px) scale(1.3);
-  }
-
-  .imgService:hover .pc1 {
-  transform: translateX(-10px) scale(1) rotate(-8deg) translateY(-20px);
-}
-
-.imgService:hover .pc2 {
-  transform: translateX(-210px) rotate(8deg) scale(1.5) translateY(-20px);
-}
-
-  .textService1, .textService2 {
-    width: 50%;
-  }
-
-  .serviceTitle1, .serviceTitle2 {
-    font-size: 35px;
-    margin-bottom: 15px;
-  }
-
-  .description1, .description2 {
-    font-size: 17px;
-    margin-bottom: 45px;
-    margin-top: 10px;
-  }
-
-  .phone1 {
-    transform: translateY(-25px) scale(0.9) translateX(-50px);
-  }
-
-  .phone2 {
-   transform: translateY(-40px) translateX(-80px) scale(0.8);
-  }
-
-  .underline {
-    display: block;
+    margin-top: 45px;
   }
   
 }
@@ -221,32 +149,7 @@
     padding-right: 5%;
   }
 
-  .pc1 {
-    width: 100%;
-    height: 100%;
-    transform: translateX(-20px) translateY(-60px) scale(1.2);
-  }
 
-  .pc2 {
-    transform: translateX(-260px) translateY(40px) scale(1);
-  }
-
-  .phone1 {
-    transform: translateY(20px) scale(1) translateX(-10px);
-  }
-
-  .phone2 {
-   transform: translateY(-20px) translateX(-50px) scale(0.7);
-  }
-
-  .description1, .description2 {
-    margin-top: 6px;
-    font-size: 16px;
-  }
-
-  .underline {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 630px) {
@@ -255,80 +158,63 @@
   }
 
   .title {
-    font-size: 43px;
+    font-size: 33px;
   }
 
-  .freccia {
-    scale: 0.2;
-    left: -5%;
-    top: -4%;
-  }
-
-  .divService {
-     flex-direction: column;
-     margin-top: 0px;
-  }
-
-  .imgService {
-    width: 100%;
-  }
-
-  .pc1 {
-    transform: translateX(-20px) translateY(-60px) scale(1.2);
-  }
-
-  .pc2 {
-    transform: translateX(-120px) translateY(-20px) scale(1.6);
-  }
-
-  .titleContainer {
-    align-items: flex-start;
-  }
-
-  .textService1, .textService2 {
-    width: 100%;
-    padding-left: 0px;
-    text-align: left;
-    width: 100%;
-    order: 2;
-  }
-
-  .serviceTitle1, .serviceTitle2 {
-    margin-top: 25px;
-    font-size: 25px;
-    text-align: left;
-    margin-bottom: 15px;
-    font-weight: 500;  
-  }
-
-  .underline {
+  .sx {
     display: none;
   }
 
-  .description1, .description2 {
-    font-size: 17px;
-    text-align: left;
-    margin-bottom: 45px;
-    margin-top: -10px;
+  .dx {
+    width: 100%;
+    justify-content: center;
   }
 
-   .imgService {
-    order: 1;
+  .cardServiceS, .cardServiceW {
+    width: 100%;
+    height: 250px;
+    padding: 8px;
+    margin-left: 0;
+    margin-right: 15px;
   }
 
-  .phone1 {
-    transform: translateY(20px) scale(1) translateX(-10px);
+  .nameService {
+    font-size: 30px;
+    line-height: 1;
   }
 
-  .phone2 {
-   transform: translateY(-20px) translateX(-50px) scale(0.7);
+  .description {
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    height: 200px;
   }
 
-  .imgService {
-    margin-left: 0px;
-    margin-right: 0px;
-  
+  .buttonService {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
   }
+
+  .col1 {
+    display: none;
+  }
+
+  .colDx {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .col2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100%;
+    line-height: 1;
+  }
+
 }
 
 .puntini {
