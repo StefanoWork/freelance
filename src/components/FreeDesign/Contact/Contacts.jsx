@@ -51,7 +51,7 @@ export default function Contacts() {
         <form
           className={style.form}
           ref={form}
-          action="https://assets.mailerlite.com/jsonp/644337/forms/117519243837179650/subscribe"
+          action="https://assets.mailerlite.com/jsonp/644337/forms/141981738425386649/subscribe"
           method="POST"
           onSubmit={handleSubmit}
         >
