@@ -48,7 +48,7 @@ export default function Hero() {
         {/* <Image src={Oblique} alt="" className={style.oblique} /> */}
         
         <div className={style.divMain}>
-          <h1 className={`${style.title} mulish`}>Unisci il tuo sito e i tuoi social in un'<span> <Image src={Cerchio} alt="" className={style.cerchio} id="cerchio" />identità</span> unica</h1> 
+          <h1 className={`${style.title} mulish`}>Unisci il tuo sito e i tuoi social in un<span> <Image src={Cerchio} alt="" className={style.cerchio} id="cerchio" />identità</span> unica</h1> 
           <h2 className={`${style.subtitle} mulish`}>Aiuto liberi professionisti a creare una presenza online coerente, progettando siti web e grafiche social che si parlano tra loro.</h2>        
         </div>
         

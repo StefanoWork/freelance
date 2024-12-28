@@ -100,7 +100,7 @@ export default function Method() {
               <p className={`${style.description} barlow ml-md-20`}>
                 Dal design del sito ai post sui social, ogni contenuto è pensato per 
                 raccontare la tua storia in modo autentico e coinvolgente. 
-                L'obiettivo è trasformare i visitatori e i follower in clienti 
+                L obiettivo è trasformare i visitatori e i follower in clienti 
                 fedeli e appassionati del tuo brand.
               </p>
             </Col>
@@ -117,7 +117,7 @@ export default function Method() {
               <p className={`${style.name} barlow `}>Collaborazione costante</p>
               <p className={`${style.description} barlow mr-md-36`}>
                 Ti coinvolgo in ogni fase del processo, 
-                dall'idea iniziale fino alla realizzazione finale. 
+                dall idea iniziale fino alla realizzazione finale. 
                 Ascolto le tue esigenze, ti offro consulenza e ti tengo 
                 aggiornato su ogni progresso.
               </p>
