@@ -90,6 +90,8 @@
   width: 500px;
   height: 400px;
   margin-right: 35px;
+  overflow: hidden;
+  padding: 7px;
 }
 
 .bolla {

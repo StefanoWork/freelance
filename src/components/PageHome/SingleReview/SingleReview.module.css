@@ -9,14 +9,22 @@
   width: 50%;
 }
 
-.media, .image {
+.media, .imageContainer {
   width: 100%;
   height: 800px;
   border-radius: 15px;
 }
 
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image {
-  object-fit:fill;
+  object-fit: contain;
+    width: 100%;
+  height: 100%;
 }
 
 .Dx {
@@ -26,7 +34,7 @@
 
 .author {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .logo {
@@ -37,8 +45,7 @@
 
 .name {
   align-self:  center;
-  margin-left: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -55,7 +62,7 @@
 @media screen and (max-width: 630px) {
   .review {
     flex-direction: column;
-    padding: 2px;
+    padding: 6px;
   }
 
   .Dx {
@@ -65,9 +72,10 @@
   }
 
   .text {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
-    text-align: center;
+    margin-left: 12px;
+    margin-right: 15px;
   }
 
   .Sx {
@@ -84,6 +92,7 @@
 
   .name {
     font-weight: 500;
+    margin-left: 15px;
   }
 
   .review.hasVideo .text {
